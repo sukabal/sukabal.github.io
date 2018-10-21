@@ -1,6 +1,6 @@
 ---
 ---
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,700|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:100,300,700,900|Roboto');
 
 /* Fonts */
 $font-family-base: 'Roboto', sans-serif;
@@ -17,22 +17,38 @@ $grey-color: #666;
 $grey-light-color: #E9F1F7;
 
 /* Utilities */
+// Background color
 .bg-primary { background-color: $primary-color; }
 .bg-secondary { background-color: $secondary-color; }
 .bg-accent { background-color: $accent-color; }
 .bg-accent-light { background-color: $accent-light-color; }
 .bg-grey { background-color: $grey-color; }
-.bg-light-rey { background-color: $grey-light-color; }
+.bg-light-grey { background-color: $grey-light-color; }
+.bg-white { background-color: $white-color; }
+
+// Color
+.color-primary { color: $primary-color; }
+.color-secondary { color: $secondary-color; }
+.color-accent { color: $accent-color; }
+.color-accent-light { color: $accent-light-color; }
+.color-grey { color: $grey-color; }
+.color-light-rey { color: $grey-light-color; }
+.color-white { color: $white-color; }
+
+
+$header-size: 20px;
+
 
 /* General */
 body {
   margin: 0;
   font-family: $font-family-base;
-  background-color: $grey-light-color;
+  background-color: $white-color;
 }
 
 .container {
   margin: 0;
+  padding-top: 80px;
 }
 
 .textContainer {
@@ -75,14 +91,19 @@ body {
 
 /* */
 .band {
+  min-height: 200px;
+
   h2 {
-    margin: 0;
+    margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
     font-weight: 300;
     text-align: center;
-}
+    font-family: $font-family-title;
+    font-size: 30px;
+    padding-top: 60px;
+  }
 
   p {
     margin: 0;
@@ -90,8 +111,26 @@ body {
   }
 }
 
-
 /* Navbar */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  background-color: $white-color;
+  box-shadow: 0 3px 7px 0 rgba(0,0,0,.1);
+}
+
+.logo {
+  padding-left: 20px;
+  font-family: $font-family-title;
+  font-weight: 900;
+  font-size: 40px;
+  color: $primary-color;
+}
+
 .navbar {
   display: flex;
   justify-content: flex-end;
@@ -99,8 +138,6 @@ body {
   font-size: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: $grey-light-color;
-
 }
 
 .navbar__item {
