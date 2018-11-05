@@ -16,6 +16,7 @@ $black-color: #000;
 $grey-color: #666;
 $grey-light-color: #E9F1F7;
 
+
 /* Utilities */
 // Background color
 .bg-primary { background-color: $primary-color; }
@@ -93,7 +94,6 @@ body {
   min-height: 200px;
   font-family: $font-family-title;
   padding: 20px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -105,13 +105,20 @@ body {
     padding-top: 60px;
 
   }
+}
 
-  p {
-    font-weight: 300;
-    font-size: 20px;
-    margin: 0;
-    text-align: center;
-    max-width: 752px;
+.section-paragraph {
+  font-weight: 300;
+  font-size: 22px;
+  margin: 0;
+  text-align: center;
+  max-width: 936px; // 752px;
+  padding-bottom: 20px;
+  line-height: 1.4;
+  margin-bottom: 8px;
+
+  &--last-paragraph{
+    padding-bottom: 60px;
   }
 }
 
