@@ -1,11 +1,11 @@
 ---
 layout: default
 ---
-<div class="textContainer">
-  <h1>{{ page.title }}</h1>
-  <p class="meta">{{ page.date | date_to_string }}</p>
 
-  <div class="post">
-    {{ content }}
-  </div>
-</div>
+<section class="band bg-white">
+  <h2 class="entry-title">{{ page.title }}</h2>
+  <span>{{ page.date | date_to_string }}</span>
+  <p class="section-paragraph post">
+    {{content}}
+  </p>
+</section>

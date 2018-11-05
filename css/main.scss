@@ -173,6 +173,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   margin-bottom: 50px;
+  justify-content: center;
 
   button {
     background-color: $secondary-color;
@@ -244,4 +245,14 @@ ul.posts {
 
 ul.posts li {
   list-style: none;
+}
+
+
+/* Blog */
+.entry-title {
+  color: $primary-color;
+  font-size: 30px;
+  margin-top: 30px;
+  padding: 20px;
+  text-decoration: none;
 }
