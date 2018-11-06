@@ -5,7 +5,9 @@ layout: default
 <section class="band bg-white">
   <h2 class="entry-title">{{ page.title }}</h2>
   <span>{{ page.date | date_to_string }}</span>
-  <p class="section-paragraph post">
-    {{content}}
-  </p>
+  <article class="post">
+    <p class="section-paragraph">
+      {{content}}
+    </p>
+  </article>
 </section>
