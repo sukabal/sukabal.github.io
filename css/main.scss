@@ -9,8 +9,9 @@ $font-family-title: 'Fira Sans', sans-serif;
 /* Colors */
 $primary-color: #0D6684;
 $secondary-color: #0FA3B1;
-$accent-color: #D2CCA1;
-$accent-light-color: #E7DFC6;
+$accent-color: #FF8213;
+$accent-light-color: #FFB16C;
+
 $white-color: white;
 $black-color: #000;
 $grey-color: #666;
@@ -61,7 +62,7 @@ body {
 /* Main page */
 .headerImage {
   background: url(/media/photos/background-main.jpg) 0% 0% / cover;
-  min-height: 650px;
+  min-height: 600px;
   display: flex;
   align-items: center;
   opacity: 0.8;
@@ -87,6 +88,11 @@ body {
   text-align: center;
   font-size: 1.5em;
   line-height: 1.4em;
+}
+
+.linkToAction {
+  color: $accent-color;
+  // text-decoration: none;
 }
 
 /* */

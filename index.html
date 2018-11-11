@@ -4,62 +4,69 @@ title: Bienvenido a -ahoratigo-
 ---
 <div class="headerImage">
   <div class="textContainer">
-    <h1 class="pageTitle">¿Tienes un problema y necesitas ayuda?</h1>
-    <p class="subtitle">Te ayudamos de forma rápida y profesional allí dónde te encuentres</p>
+    <h1 class="pageTitle">¿Tienes un problema y necesitas consejo?</h1>
+    <p class="subtitle">Ahora te podemos ayudar de forma rápida y profesional allí dónde te encuentres. Ahora
+      siempre estamos contigo.</p>
   </div>
 </div>
 
-<section class="band bg-white">
-  <h2 class="color-primary">¿Necesitas guía, consejo o ayuda?</h2>
-  <p class="section-paragraph">Si tienes un objetivo vital y no sabes cómo alcanzarlo, podemos ayudarte a conseguirlo.
-    Si sientes que falta algo en tu vida, necesitas mejorar tu autoestima,
-    tus relaciones
-    personales o tu futuro
-    profesional te inquieta, podemos ayudarte.</p>
-  <p class="section-paragraph section-paragraph--last-paragraph">Cuando observas que en tu vida hay obstáculos que no
-    te dejan avanzar o quizá te sientes
-    incómodo ante ciertas
-    situaciones sociales, nosotros podemos contribuir a que te encuentres mejor contigo mismo y con los demás.</p>
-</section>
 
 <section class="band bg-light-grey">
-  <h2>¿Tienes dudas o simplemente quieres hablar?</h2>
+  <h2>¿Estás preocupado por alguien o algo en particular y necesitas ayuda?</h2>
+  <p class="section-paragraph">Hay algo que no encaja. Percibes cosas que te llaman
+    la atención en el comportamiento de alguien que te importa y no sabes cómo conducirte.
+  </p>
+  <p class="section-paragraph section-paragraph--last-paragraph">
+    ¿Tienes problemas en tu vida y dudas sobre si debes acudir a un psicólogo? Tal vez incluso has buscado alguno, pero
+    no sabes si las terapias que ofrecen son adecuadas para ti... Descubre nuestro <a class="linkToAction" href="javascript:goToAction('btnChat');">servicio
+      de chat</a>
+  </p>
+</section>
+
+
+<section class="band bg-white">
+  <h2 class="color-primary">¿Necesitas herramientas para mejorar en tu día a día?</h2>
+  <p class="section-paragraph">Si tienes un objetivo vital y no sabes cómo alcanzarlo, podemos ayudarte a conseguirlo.
+    Si sientes que falta algo en tu vida, necesitas mejorar tu autoestima,
+    tus relaciones personales o tu futuro profesional te inquieta, podemos ayudarte.</p>
+  <p class="section-paragraph section-paragraph--last-paragraph">Si hay cosas en tu vida que no te dejan avanzar y
+    quieres llegar a tu máximo potencial, puedes acudir a nuestro servicio de
+    <a class="linkToAction" href="javascript:goToAction('btnEmail');">correo electrónico</a></p>
+</section>
+
+
+<section class="band bg-light-grey">
+  <h2>¿Tienes dudas, problemas o simplemente quieres hablar?</h2>
   <p class="section-paragraph section-paragraph--last-paragraph">
     Si estás triste porque ha ocurrido algo negativo en tu vida y necesitas hablar con alguien, aquí estamos. Si te
     sientes incomprendida, juzgada, ninguneada o simplemente
     sóla puedes acudir a nosotros y te
     prestaremos el apoyo y comprensión que mereces, ayudándote a superar tus problemas de pareja, familiares o en tu
-    trabajo.
-  </p>
-</section>
-
-<section class="band bg-light-grey">
-  <h2>¿Estás preocupado por alguien o algo en particular?</h2>
-  <p class="section-paragraph">
-    Hay algo que no encaja. Percibes cosas que te llaman la atención en el comportamiento de alguien que te importa y
-    no sabes cómo conducirte.
-  </p>
-  <p class="section-paragraph section-paragraph--last-paragraph">
-    O tal vez tienes el propósito firme de mejorar tu vida, pero tras leer sobre varias técnicas no sabes cuál es la
-    más adecuada en tu caso.
+    trabajo. Podemos ayudarte <a class="linkToAction" href="javascript:goToAction('btnCall');">vía telefónica</a>
   </p>
 </section>
 
 <section class="band bg-white">
   <h2>Nuestros servicios</h2>
   <ul class="services">
-    <li class="buttonCall">
-      <button>Chat</button>
+    <li class="buttonActionCall">
+      <div id="btnChatWrapper">
+        <button id="btnChat">Chat</button>
+      </div>
     </li>
-
-    <li class="buttonCall">
-      <button>Correo electrónico</button>
+    <li class="buttonActionCall">
+      <div id="btnEmailWrapper">
+        <button id="btnEmail">Correo electrónico</button>
+      </div>
     </li>
-
-    <li class="buttonCall">
-      <button>Llamada telefónica</button>
+    <li class="buttonActionCall">
+      <div id="btnCallWrapper">
+        <button id="btnCall">Llamada telefónica</button>
+      </div>
     </li>
   </ul>
+  <br>
+  <br>
 </section>
 
 
@@ -72,13 +79,13 @@ title: Bienvenido a -ahoratigo-
   </p>
   <ul class="socialMedia">
     <li>
-      <a href="http://twitter.com/sukabal" target="_blank"><img src="/media/twitter.svg"></a>
+      <a href="http://twitter.com/ahoratigo" target="_blank"><img src="/media/icon-twitter.svg"></a>
     </li>
     <li>
-      <a href="http://facebook.com/XXXX" target="_blank"><img src="/media/facebook.svg"></a>
+      <a href="http://facebook.com/XXXX" target="_blank"><img src="/media/icon-facebook.svg"></a>
     </li>
     <li>
-      <a href="https://www.linkedin.com/in/XXXX" target="_blank"><img src="/media/linkedin.svg"></a>
+      <a href="https://www.linkedin.com/in/XXXX" target="_blank"><img src="/media/icon-linkedin.svg"></a>
     </li>
   </ul>
 </section>
@@ -90,3 +97,13 @@ title: Bienvenido a -ahoratigo-
     Por favor vea nuestra política de Privacidad y Cookies para más información.
   </p>
 </footer>
+
+<script>
+  function goToAction(buttonId) {
+    const actionButton = document.getElementById(buttonId);
+    actionButton.scrollIntoView({ behavior: 'smooth' });
+    // setTimeout(() => {
+    //   actionButton.scrollTop -= 10;
+    // }, 2000);
+  }
+</script>
