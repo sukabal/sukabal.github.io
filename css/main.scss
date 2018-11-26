@@ -14,7 +14,7 @@ $accent-light-color: #FFB16C;
 
 $white-color: white;
 $black-color: #000;
-$grey-color: #666;
+$grey-color: whitesmoke;
 $grey-light-color: #E9F1F7;
 
 
@@ -69,15 +69,23 @@ body {
   box-shadow: inset 0 0 0 100vmax rgba($primary-color, .3);
 }
 
-.pageTitle {
+.mainTitle {
   color: $white-color;
   font-size: 60px;
   font-family: $font-family-title;
   font-weight: 300;
-  text-shadow: 1px 1px 1px $grey-color;
+  text-shadow: 1px 1px 1px #666;
   text-align: center;
   margin: auto;
   padding-bottom: 10px;
+}
+
+.pageTitle {
+  color: $primary-color;
+  font-size: 40px;
+  font-family: $font-family-title;
+  font-weight: 300;
+  margin-top: 100px;
 }
 
 .subtitle {
@@ -95,6 +103,13 @@ body {
   // text-decoration: none;
 }
 
+.profileImg {
+  border: 2px $primary-color solid;
+  border-radius: 50%;
+  padding: 20px;
+  max-width: 300px;
+}
+
 /* */
 .band {
   min-height: 200px;
@@ -104,12 +119,19 @@ body {
   flex-direction: column;
   align-items: center;
 
+  &--mini {
+    min-height: 0px;
+
+    h3 {
+      font-weight: 300;
+    }
+  }
+
   h2 {
     font-weight: 300;
     text-align: center;
     font-size: 36px;
     padding-top: 60px;
-
   }
 }
 
