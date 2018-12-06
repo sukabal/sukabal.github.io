@@ -11,21 +11,39 @@
 <body>
   <header class="header">
     <div class="logoBox">
-      <span class="logo">ahoratigo</span>
+      <span class="logo"><a title="Inicio" href="/">ahoratigo</a></span>
     </div>
-    <ul class="navbar">
-      <li class="navbar__item"><a class="navbar__item-link" href="/">Inicio</a></li>
-      <li class="navbar__item"><a class="navbar__item-link" href="/servicios">Servicios</a></li>
-      <li class="navbar__item"><a class="navbar__item-link" href="/nosotros">Nosotros</a></li>
-      <li class="navbar__item"><a class="navbar__item-link" href="/blog">Blog</a></li>
-    </ul>
-  </header>
+    <div id="mobileMenu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
 
+    <ul class="navbar">
+      <li class="navbar__item"><a title="Inicio" class="navbar__item-link" href="/">Inicio</a></li>
+      <li class="navbar__item"><a title="Servicios" class="navbar__item-link" href="/servicios">Servicios</a></li>
+      <li class="navbar__item"><a title="Nosotros" class="navbar__item-link" href="/nosotros">Nosotros</a></li>
+      <li class="navbar__item"><a title="Blog" class="navbar__item-link" href="/blog">Blog</a></li>
+    </ul>
+
+  </header>
   <div class="container">
 
     {{ content }}
 
   </div>
+  <script>
+    function toggleResponsiveMenu() {
+      var navbar = document.querySelector(".navbar");
+      if (navbar.style.display === 'flex') {
+        navbar.style.display = 'none';
+      } else {
+        navbar.style.display = 'flex';
+      }
+    }
+
+    document.getElementById('mobileMenu').addEventListener('click', toggleResponsiveMenu);
+  </script>
 </body>
 
 </html>

@@ -2,6 +2,7 @@
 ---
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:100,300,700,900|Roboto');
 
+
 /* Fonts */
 $font-family-base: 'Roboto', sans-serif;
 $font-family-title: 'Fira Sans', sans-serif;
@@ -71,13 +72,14 @@ body {
 
 .mainTitle {
   color: $white-color;
-  font-size: 60px;
+  font-size: 55px;
   font-family: $font-family-title;
   font-weight: 300;
   text-shadow: 1px 1px 1px #666;
   text-align: center;
   margin: auto;
   padding-bottom: 10px;
+  padding-top: 40px;
 }
 
 .pageTitle {
@@ -167,15 +169,20 @@ body {
   box-shadow: 0 3px 7px 0 rgba(0,0,0,.1);
 }
 
-.logoBox {
-  padding-left: 20px;
-}
-
 .logo {
   font-family: $font-family-title;
   font-weight: 900;
   font-size: 40px;
-  color: $accent-light-color;
+  padding-left: 20px;
+
+  a {
+    text-decoration: none;
+    color: $accent-light-color;
+
+    &:hover{
+      color: $accent-color;
+    }
+  }
 }
 
 /* Navbar */
@@ -184,29 +191,70 @@ body {
   justify-content: flex-end;
   list-style: none;
   font-size: 20px;
+  padding-left: 0px;
   padding-top: 20px;
   padding-bottom: 20px;
 
-  // @media  screen and (max-width: 650px) {
-  //   flex-direction: column;
-  //   line-height: 2;
-  //   align-content: flex-start;
-  // }
-}
-
-.navbar__item {
-  display: inline;
-  margin-right: 30px;
-}
-
-.navbar__item-link {
-  color: $primary-color;
-  text-transform: uppercase;
-  text-decoration: none;
-  &:hover {
-    text-decoration: none;
-    color: $accent-color;
+  &--hidden {
+    display: none;
   }
+
+  @media all and (max-width: 719px) {
+    display: none;
+    flex-direction: column;
+    align-items: inherit;
+    justify-content: flex-start;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background: #E9F1F7;
+    top: 75px;
+    opacity: 0.9;
+    font-size: 24px;
+    line-height: 60px;
+
+    &--is-visible{
+      display: block;
+    }
+  }
+
+  .navbar__item {
+    display: inline;
+    margin-right: 30px;
+
+    @media all and (max-width: 719px) {
+      margin-right: 0px;
+    }
+
+    .navbar__item-link {
+      color: $primary-color;
+      text-transform: uppercase;
+      text-decoration: none;
+      &:hover {
+        text-decoration: none;
+        color: $accent-light-color;
+      }
+    }
+  }
+}
+
+#mobileMenu {
+  padding: 40px 20px;
+
+  @media all and (min-width: 720px) {
+    display: none;
+  }
+
+  span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-top: 5px;
+    background: $accent-light-color;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
 }
 
 /* Call to Action buttons */
@@ -222,14 +270,14 @@ body {
   button {
     background-color: $secondary-color;
     font-family: $font-family-title;
-    font-size: 40px;
+    font-size: 30px;
     border: none;
     padding: 15px 32px;
     text-align: center;
     display: inline-block;
     margin: 15px;
     width: 250px;
-    height: 250px;
+    height: 130px;
     cursor: pointer;
 
     display: flex;
@@ -238,8 +286,8 @@ body {
     justify-content: center;
 
     img {
-      width: 50px;
-      height: 50px;
+      width: 40px;
+      height: 40px;
       padding: 10px;
     }
   }
@@ -293,6 +341,7 @@ body {
 /* Footer */
 ul.posts {
   margin: 20px auto 40px;
+  padding-left: 0px;
   font-size: 1.5em;
 }
 
