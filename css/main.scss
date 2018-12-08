@@ -126,19 +126,21 @@ body {
   flex-direction: column;
   align-items: center;
 
-  &--mini {
-    min-height: 0px;
-
-    h3 {
-      font-weight: 300;
-    }
-  }
-
   h2 {
     font-weight: 300;
     text-align: center;
     font-size: 36px;
     padding-top: 60px;
+  }
+
+  &--mini {
+    min-height: 0px;
+
+    h2 {
+      font-weight: 300;
+      font-size: 28px;
+      padding-top: 20px;
+    }
   }
 }
 
@@ -155,6 +157,22 @@ body {
   &--last-paragraph{
     padding-bottom: 60px;
   }
+
+  &--small {
+    font-size: 16px;
+    max-width: 600px;
+    padding-bottom: 0px;
+
+    text-align: center;
+  }
+}
+
+.service-description {
+  padding: 20px;
+  font-weight: 200;
+  font-size: 30px;
+  text-align: center;
+  border: 1px $black-color solid;
 }
 
 /* Header */
@@ -277,7 +295,7 @@ body {
     display: inline-block;
     margin: 15px;
     width: 250px;
-    height: 130px;
+    height: 200px;
     cursor: pointer;
 
     display: flex;
