@@ -1,7 +1,7 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-## [Unreleased]
+## [0.1.0] - 2018-12-30
 
 ### Added
 - Basic contents with 4 sections:
