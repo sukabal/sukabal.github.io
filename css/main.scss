@@ -186,6 +186,24 @@ body {
   &--contrast {
     border: 1px $white-color solid;
   }
+
+  &--pay {
+    padding-top: 0px;
+    width: 90%;
+    max-width: 500px;
+    margin-bottom: 100px;
+  }
+
+  p {
+    margin-bottom: 0px;
+  }
+
+  .service-price {
+    font-size: 52px;
+    font-weight: 300;
+    font-family: $font-family-title;
+    margin-bottom: 20px;
+  }
 }
 
 /* Header */
@@ -308,7 +326,7 @@ body {
     display: inline-block;
     margin: 15px;
     width: 250px;
-    height: 200px;
+    height: 140px;
     cursor: pointer;
 
     display: flex;

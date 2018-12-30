@@ -1,0 +1,93 @@
+---
+layout: default
+title: Servicio de Chat
+---
+
+<section class="band bg-grey">
+  <h1 class="pageTitle">Servicio de Chat</h1>
+
+  <div class="service-description service-description--pay">
+    <p>1 charla 15 minutos</p>
+    <div class="service-price">
+      <span>8</span>€
+    </div>
+    <div id="paypal-button-container"></div>
+
+  </div>
+
+  <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+
+  <script>
+
+    // Render the PayPal button
+    paypal.Button.render({
+
+      // Set your environment
+      env: 'sandbox', // sandbox | production
+
+      // Specify the style of the button
+      style: {
+        label: 'pay',
+        fundingicons: true, // optional
+        branding: true, // optional
+        size: 'responsive', // small | medium | large | responsive
+        shape: 'rect',   // pill | rect
+        color: 'blue'   // gold | blue | silver | black
+      },
+
+      // PayPal Client IDs - replace with your own
+      // Create a PayPal app: https://developer.paypal.com/developer/applications/create
+
+      client: {
+        sandbox: 'ASQLFYiWXtNKSaoElD6eFJgM0ct9xQsywE015DpPGq1ayhJOstEa8IwnXVTYQNAsicHbAdSq64qKIOgF',
+        production: '<insert production client id>'
+      },
+
+      // Show the buyer a 'Pay Now' button in the checkout flow
+      commit: true,
+
+      // Wait for the PayPal button to be clicked
+
+      payment: function (data, actions) {
+        const PRICE = '8';
+        const CURRENCY = 'EUR';
+        const SERVICE = 'Servicio de chat (1 sesión corta)';
+        const ISO_DATE = new Date().toISOString();
+
+        return actions.payment.create({
+          transactions: [
+            {
+              amount: {
+                total: PRICE,
+                currency: CURRENCY
+              },
+              description: `Pago de ${PRICE} (${CURRENCY}) por ${SERVICE}`,
+              custom: `chat-${ISO_DATE}`
+            },
+          ],
+          // redirect_urls: {
+          //   return_url: 'https://example.com',
+          //   cancel_url: 'https://example.com'
+          // }
+        });
+      },
+
+      // Wait for the payment to be authorized by the customer
+      onAuthorize: function (data, actions) {
+        return actions.payment.execute().then(function () {
+          window.alert('Payment Complete!');
+          //actions.redirect();
+        });
+      },
+
+      onError: function (err) {
+        window.alert('Error: ' + err);
+        // actions.redirect();
+      }
+
+    }, '#paypal-button-container');
+
+  </script>
+
+
+</section>
