@@ -65,24 +65,24 @@ title: Servicio de Chat
               custom: `chat-${ISO_DATE}`
             },
           ],
-          // redirect_urls: {
-          //   return_url: 'https://example.com',
-          //   cancel_url: 'https://example.com'
-          // }
+          redirect_urls: {
+            return_url: '/servicio-chat-ok.html',
+            cancel_url: '/error-pago.html'
+          }
         });
       },
 
       // Wait for the payment to be authorized by the customer
       onAuthorize: function (data, actions) {
         return actions.payment.execute().then(function () {
-          window.alert('Payment Complete!');
-          //actions.redirect();
+          window.console.log('Payment Complete!');
+          actions.redirect();
         });
       },
 
       onError: function (err) {
-        window.alert('Error: ' + err);
-        // actions.redirect();
+        window.console.error('Error ' + error);
+        actions.redirect();
       }
 
     }, '#paypal-button-container');

@@ -1,0 +1,37 @@
+---
+layout: default
+title: Servicio de Chat
+---
+
+<section class="band bg-grey">
+  <h2>¡Has realizado el pago con éxito!</h2>
+  <img class="payment payment--succesful" src="media/icon-success.svg">
+  <h3>Sigue por favor estas instrucciones:</h3>
+  <ol>
+    <li> Si estás con tu móvil (o dispones de WhatsApp Web en tu PC), inicia un WhatsApp con nosotros
+      <a class="js-whats-app">
+        PULSANDO AQUÍ
+      </a>
+    </li>
+    <li>
+      En caso contrario, anota este número y contáctanos: 669 759 225
+    </li>
+  </ol>
+</section>
+
+<script>
+
+  function getPaymentData() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const paymentId = urlParams.get('paymentId');
+    const payerID = urlParams.get('PayerID');
+    return { paymentId, payerID };
+  }
+
+  const phoneNunber = 34669759225;
+  const paymentData = getPaymentData();
+  const msg = `👋 Hola <ahoratigo>!, me gustaría contactar con vosotros para el Servicio de Chat (ID: ${paymentData.paymentId}).`;
+  const link = encodeURI(`https://wa.me/${phoneNunber}?text=${msg}`);
+
+  document.querySelector('.js-whats-app').href = link;
+</script>
