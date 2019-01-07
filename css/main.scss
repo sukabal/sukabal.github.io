@@ -77,7 +77,10 @@ body {
   font-weight: 300;
   text-shadow: 1px 1px 1px #666;
   text-align: center;
-  margin: auto;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
   padding-bottom: 10px;
   padding-top: 40px;
 }
@@ -98,9 +101,11 @@ body {
   text-align: center;
   font-size: 1.5em;
   line-height: 1.4em;
+  padding-left: 10px;
+  padding-right: 10px;
 
   &--motto {
-    margin-top: 40px;
+    margin-top: 25px;
     font-style: italic;
   }
 }
@@ -138,7 +143,7 @@ body {
     font-weight: 300;
     text-align: center;
     font-size: 36px;
-    padding-top: 60px;
+    padding-top: 45px;
   }
 
   &--mini {
@@ -203,6 +208,19 @@ body {
     font-weight: 300;
     font-family: $font-family-title;
     margin-bottom: 20px;
+  }
+}
+
+.arrow-down {
+  max-width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+
+  &--top {
+    margin-top: 32px;
+    filter: invert(1) sepia(1);
+    margin-bottom: 16px;
   }
 }
 
