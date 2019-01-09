@@ -217,10 +217,18 @@ body {
   margin-right: auto;
   padding-bottom: 10px;
 
+  &:hover{
+    cursor: pointer;
+  }
+
   &--top {
-    margin-top: 32px;
+    margin-top: 40px;
     filter: invert(1) sepia(1);
     margin-bottom: 16px;
+
+    &:hover{
+      filter: invert(0);
+    }
   }
 }
 

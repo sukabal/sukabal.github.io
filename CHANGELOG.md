@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 - Add paypal integration (sandbox) for:
   - servicio-chat
 
+- Small arrows to scroll in main view
 
 ## [0.1.0] - 2018-12-30
 

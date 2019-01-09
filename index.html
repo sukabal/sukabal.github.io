@@ -7,41 +7,41 @@ title: Bienvenido a ahoratigo.com
     <h1 class="mainTitle">¿Tienes un problema y necesitas consejo?</h1>
     <p class="subtitle">Ahora te podemos ayudar de forma rápida y profesional, allí dónde te encuentres.</p>
     <p class="subtitle subtitle--motto">Ahora siempre estamos contigo.</p>
-    <img class="arrow-down arrow-down--top" src="media/icon-arrow-down.svg">
+    <img class="arrow-down arrow-down--top" src="media/icon-arrow-down.svg" onclick="scrollToId('section-01', {block: 'center'})">
   </div>
 </div>
 
-<section class="band bg-light-grey">
+<section id="section-01" class="band bg-light-grey">
   <h2>¿Estás preocupado y necesitas ayuda?</h2>
-  <p class="section-paragraph">¿Tienes problemas en tu vida y dudas si debes acudir a un psicólogo? Tal vez incluso ya
+  <p class="section-paragraph">¿Tienes problemas en tu vida y dudas si debes acudir a un psicólogo? Tal
+    vez incluso ya
     has buscado alguno, pero
     no sabes si la ayuda que pueden ofrecerte es adecuada para ti...
   </p>
   <p class="section-paragraph">
     O quizá percibes cosas que te llaman
     la atención en el comportamiento de alguien cercano y no sabes cómo manejarte...</p>
-  <p class="section-paragraph"> Descubre nuestro <a class="linkToAction" href="javascript:goToAction('btnChat');">servicio
+  <p class="section-paragraph"> Descubre nuestro <a class="linkToAction" href="javascript:scrollToId('btnChat');">servicio
       de chat</a>
   </p>
-  <img class="arrow-down" src="media/icon-arrow-down.svg">
+  <img class="arrow-down" src="media/icon-arrow-down.svg" onclick="scrollToId('section-02', {block: 'center'})">
 </section>
 
 
-<section class="band bg-white">
+<section id="section-02" class="band bg-white">
   <h2 class="color-primary">¿Necesitas herramientas para mejorar?</h2>
   <p class="section-paragraph">Si tienes un objetivo vital y no sabes cómo alcanzarlo, podemos ayudarte a conseguirlo.
     Si sientes que falta algo en tu vida, necesitas mejorar tu autoestima,
     tus relaciones personales o tu futuro profesional, podemos ayudarte.</p>
   <p class="section-paragraph">Si hay cosas en tu vida que no te dejan avanzar y
     quieres llegar a tu máximo potencial, contáctanos.</p>
-  <p class="section-paragraph">Conoce nuestro servicio de <a class="linkToAction" href="javascript:goToAction('btnEmail');">
+  <p class="section-paragraph">Conoce nuestro servicio de <a class="linkToAction" href="javascript:scrollToId('btnEmail');">
       correo electrónico</a></p>
-  <img class="arrow-down" src="media/icon-arrow-down.svg">
-
+  <img class="arrow-down" src="media/icon-arrow-down.svg" onclick="scrollToId('section-03', {block: 'center'})">
 </section>
 
 
-<section class="band bg-light-grey">
+<section id="section-03" class="band bg-light-grey">
   <h2>¿Tienes problemas o simplemente quieres hablar?</h2>
   <p class="section-paragraph">
     Si estás triste porque ha ocurrido algo negativo en tu vida y necesitas hablar con alguien, aquí estamos. Si te
@@ -49,14 +49,13 @@ title: Bienvenido a ahoratigo.com
     sólo, puedes acudir a nosotros y te
     prestaremos el apoyo y comprensión que mereces, ayudándote a superar tus problemas de pareja, familiares o en tu
     trabajo (incluso con tu mascota).</p>
-  <p class="section-paragraph">Podemos ayudarte <a class="linkToAction" href="javascript:goToAction('btnCall');">vía
+  <p class="section-paragraph">Podemos ayudarte <a class="linkToAction" href="javascript:scrollToId('btnCall');">vía
       telefónica</a>
   </p>
-  <img class="arrow-down" src="media/icon-arrow-down.svg">
-
+  <img class="arrow-down" src="media/icon-arrow-down.svg" onclick="scrollToId('section-04', {block: 'center'})">
 </section>
 
-<section class="band bg-white">
+<section id="section-04" class="band bg-white">
   <h2>Estos son nuestros servicios para ti</h2>
   <ul class="services">
     <li class="buttonActionCall">
@@ -122,8 +121,15 @@ title: Bienvenido a ahoratigo.com
 </footer>
 
 <script>
-  function goToAction(buttonId) {
-    const actionButton = document.getElementById(buttonId);
-    actionButton.scrollIntoView({ behavior: 'smooth' });
+  function scrollToId(elementId, scrollOptions) {
+    const element = document.getElementById(elementId);
+
+    const options = scrollOptions || {};
+    const scrollIntoViewOptions = { behavior: 'smooth' };
+    for (var attr in options) {
+      scrollIntoViewOptions[attr] = options[attr];
+    }
+
+    element.scrollIntoView(scrollIntoViewOptions);
   }
 </script>
