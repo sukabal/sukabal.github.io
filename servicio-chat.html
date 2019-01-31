@@ -7,7 +7,7 @@ title: Servicio de Chat
   <h1 class="pageTitle">Servicio de Chat</h1>
 
   <div class="service-description service-description--pay">
-    <p>1 charla 15 minutos</p>
+    <p>1 consulta por Whatsapp</p>
     <div class="service-price">
       <span>8</span>€
     </div>
@@ -47,11 +47,10 @@ title: Servicio de Chat
       commit: true,
 
       // Wait for the PayPal button to be clicked
-
       payment: function (data, actions) {
         const PRICE = '8';
         const CURRENCY = 'EUR';
-        const SERVICE = 'Servicio de chat (1 sesión corta)';
+        const SERVICE = 'Servicio de chat';
         const ISO_DATE = new Date().toISOString();
 
         return actions.payment.create({

@@ -146,6 +146,10 @@ body {
     padding-top: 40px;
   }
 
+  h3 {
+    font-weight: 300;
+  }
+
   &--mini {
     min-height: 0px;
 
@@ -170,6 +174,13 @@ body {
 
   @media all and (max-width: 719px) {
     height: 200px;
+  }
+
+  &--with-margin {
+    width: 90%;
+    max-width: 400px;
+    margin-top: 20px;
+    margin-bottom: 40px;
   }
 }
 
@@ -396,7 +407,8 @@ body {
 
 /* Payment */
 .payment {
-  max-width: 200px;
+  max-width: 100px;
+  padding-bottom: 10px;
 
   &--succesful {
     filter: invert(1) sepia(1) saturate(25) hue-rotate(40deg) brightness(70%);
@@ -407,6 +419,20 @@ body {
   }
 }
 
+.contact-instructions {
+  border: 1px black solid;
+  padding: 20px;
+  max-width: 500px;
+
+  ol {
+    padding-inline-start: 10px;
+  }
+
+  li {
+    line-height: 1.4;
+    padding-bottom: 14px;
+  }
+}
 
 
 /* Social Media */
@@ -414,8 +440,8 @@ body {
   list-style-type: none;
   padding-left: 0px;
   text-align: center;
-  margin-top: 50px;
-  padding-bottom: 50px;
+  // margin-top: 50px;
+  // padding-bottom: 50px;
 
   svg {
     fill: white;
