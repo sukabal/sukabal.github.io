@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Nace ahoratigo"
-permalink: "/nace-ahoratigo"
+permalink: "/blog/nace-ahoratigo"
 author: Suca Baldor
 main-image: /blog/images/nace-ahoratigo-amanecer.jpg
 date: 2019-02-05

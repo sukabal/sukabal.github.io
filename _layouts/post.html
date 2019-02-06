@@ -1,5 +1,6 @@
 ---
 layout: default
+comments: true
 ---
 
 <section class="band bg-white">
@@ -8,4 +9,24 @@ layout: default
   <article class="post">
     {{content}}
   </article>
+  <div id="disqus_thread" class="entry-comments"></div>
 </section>
+
+
+<script>
+  // RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+  // LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+  var disqus_config = function () {
+    this.page.url = '{{ page.url | absolute_url }}';
+    this.page.identifier = '{{ page.url | absolute_url }}';
+  };
+
+  (function () { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://ahoratigo.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Por favor habilita JavaScript para ver los<a href="https://disqus.com/?ref_noscript">comentarios, soportados
+    por Disqus.</a></noscript>

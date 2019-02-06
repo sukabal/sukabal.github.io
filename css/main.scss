@@ -508,6 +508,11 @@ ul.posts li {
   font-size: 14px;
 }
 
+.entry-comments {
+  width: 100%;
+  max-width: 768px;
+}
+
 .entry-readMore {
   color:$primary-color;
   font-size: 16px;
