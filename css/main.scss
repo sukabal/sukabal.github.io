@@ -188,6 +188,14 @@ body {
     text-align: center;
     font-size: 36px;
     padding-top: 40px;
+
+    &.left {
+      text-align: left;
+    }
+
+    &.right {
+      text-align: right;
+    }
   }
 
   h3 {
@@ -457,6 +465,18 @@ body {
 .services-mini-cards {
   display: flex;
   flex-flow: row wrap;
+  align-items: stretch;
+  justify-content: center;
+  max-width: 768px;
+
+  @media all and (max-width: 719px) {
+    justify-content: flex-start;
+  }
+
+  @media all and (max-width: 400px) {
+    width: 100%;
+
+  }
 }
 
 .service-mini {
@@ -471,8 +491,24 @@ body {
     width: 100%;
   }
 
+  .service-mini-content {
+    padding: 20px;
+    margin: 8px;
+    background-color: $grey-light-color;
+    height: 280px;
+
+    @media all and (max-width: 719px) {
+      height: 290px;
+    }
+
+    @media all and (max-width: 400px) {
+      height: 150px;
+    }
+  }
+
   .service-mini-title {
     color: $accent-color;
+    margin-top: 10px;
 
     // @mixin service-icon() {
     //   display: block;
@@ -506,12 +542,74 @@ body {
   }
 }
 
-.service-custom {
 
+@mixin service-extra() {
+  padding: 30px;
+  max-width: 450px;
+
+  h2 {
+    margin-top: 0px;
+  }
 }
 
-.service-enterprise {
+.service-band-with-box {
+  display: flex;
+  flex-flow: row nowrap;
+  padding-top: 50px;
 
+
+  @media all and (max-width: 719px) {
+    flex-wrap: wrap;
+  }
+
+  @media all and (max-width: 400px) {
+    flex-wrap: wrap;
+  }
+}
+
+.service-custom {
+ background-color: $accent-color;
+ @include service-extra();
+ margin-right: 100px;
+
+  @media all and (max-width: 719px) {
+    margin-right: 0px;
+  }
+}
+
+.service-custom-photo{
+  background-image: url('/media/photos/photo-agenda.jpg');
+  margin-right: -50px;
+  margin-left: -50px;
+
+  @media all and (max-width: 719px) {
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+  }
+ }
+
+
+.service-enterprise {
+  background-color: $primary-color;
+  @include service-extra();
+  margin-left: 100px;
+
+  @media all and (max-width: 719px) {
+    margin-left: 0px;
+  }
+}
+
+.service-enterprise-photo{
+  background-image: url('/media/photos/photo-enterprise.jpg');
+  margin-left: -50px;
+  margin-right: -50px;
+
+  @media all and (max-width: 719px) {
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+  }
 }
 
 /* Payment */
