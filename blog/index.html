@@ -9,12 +9,12 @@ title: Blog
 
 <ul class="posts">
   {% for post in site.posts %}
-  <a href="{{ post.url }}" class="noStyleAnchor">
+  <a href="{{ post.url }}" class="entry-anchor-to-content">
     <li>
       <section class="band bg-white">
         <h2 class="entry-title">{{ post.title }}</h2>
         <span class="entry-metadata">{{post.author }}, {{ post.date | date_to_string }}</span>
-        <article class="post">
+        <article class="entry-content">
           {{ post.content | strip_html | truncatehtml | truncatewords: 35 }}<span class="entry-readMore">(leer más...)</span>
         </article>
       </section>
