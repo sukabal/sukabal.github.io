@@ -568,7 +568,7 @@ body {
 }
 
 .service-custom {
- background-color: $accent-color;
+ background-color: $accent-light-color;
  @include service-extra();
  margin-right: 100px;
 
