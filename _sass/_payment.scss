@@ -1,0 +1,32 @@
+.payment {
+  max-width: 100px;
+  padding-bottom: 10px;
+
+  &--succesful {
+    filter: invert(1) sepia(1) saturate(25) hue-rotate(40deg) brightness(70%);
+
+  }
+  &--error {
+    filter: invert(1) sepia(1) saturate(89) hue-rotate(287deg) brightness(98%);
+  }
+}
+
+.contact-instructions {
+  border: 1px black solid;
+  padding: 20px;
+  max-width: 500px;
+
+  ol {
+    padding-inline-start: 10px;
+  }
+
+  li {
+    line-height: 1.4;
+    padding-bottom: 14px;
+  }
+}
+
+/* Paypal */
+img[alt="amex"], img[alt="discover"] {
+  display: none;
+}

@@ -1,0 +1,30 @@
+/* Colors */
+$primary-color: #0D6684;
+$secondary-color: #0FA3B1;
+$accent-color: #FF8213;
+$accent-light-color: #FFB16C;
+
+$white-color: white;
+$black-color: #000;
+$grey-color: whitesmoke;
+$grey-light-color: #E9F1F7;
+
+
+/* Utilities */
+// Background color
+.bg-primary { background-color: $primary-color; }
+.bg-secondary { background-color: $secondary-color; }
+.bg-accent { background-color: $accent-color; }
+.bg-accent-light { background-color: $accent-light-color; }
+.bg-grey { background-color: $grey-color; }
+.bg-light-grey { background-color: $grey-light-color; }
+.bg-white { background-color: $white-color; }
+
+// Color
+.color-primary { color: $primary-color; }
+.color-secondary { color: $secondary-color; }
+.color-accent { color: $accent-color; }
+.color-accent-light { color: $accent-light-color; }
+.color-grey { color: $grey-color; }
+.color-light-rey { color: $grey-light-color; }
+.color-white { color: $white-color; }

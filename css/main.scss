@@ -1,43 +1,12 @@
 ---
 ---
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans:100,300,700,900|Roboto:100,300');
 
+@import 'fonts';
+@import 'colors';
 
-/* Fonts */
-$font-family-base: 'Roboto', sans-serif;
-$font-family-title: 'Fira Sans', sans-serif;
-
-/* Colors */
-$primary-color: #0D6684;
-$secondary-color: #0FA3B1;
-$accent-color: #FF8213;
-$accent-light-color: #FFB16C;
-
-$white-color: white;
-$black-color: #000;
-$grey-color: whitesmoke;
-$grey-light-color: #E9F1F7;
-
-
-/* Utilities */
-// Background color
-.bg-primary { background-color: $primary-color; }
-.bg-secondary { background-color: $secondary-color; }
-.bg-accent { background-color: $accent-color; }
-.bg-accent-light { background-color: $accent-light-color; }
-.bg-grey { background-color: $grey-color; }
-.bg-light-grey { background-color: $grey-light-color; }
-.bg-white { background-color: $white-color; }
-
-// Color
-.color-primary { color: $primary-color; }
-.color-secondary { color: $secondary-color; }
-.color-accent { color: $accent-color; }
-.color-accent-light { color: $accent-light-color; }
-.color-grey { color: $grey-color; }
-.color-light-rey { color: $grey-light-color; }
-.color-white { color: $white-color; }
-
+@import 'about';
+@import 'blog';
+@import 'payment';
 
 /* General */
 body {
@@ -160,19 +129,6 @@ body {
   }
 }
 
-/* About us page */
-.profileImg {
-  padding: 20px;
-  max-width: 300px;
-}
-
-.profileName {
-  padding-top: 0px;
-  padding-bottom: 0px;
-  color: $secondary-color;
-  font-size: 40px;
-  margin-top: 20px;
-}
 
 /* Common elements */
 .band {
@@ -232,7 +188,7 @@ body {
     width: 90%;
     // max-width: 400px;
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 
   &--solid {
@@ -548,7 +504,7 @@ body {
   max-width: 450px;
 
   h2 {
-    margin-top: 0px;
+    margin-top: -15px;
   }
 }
 
@@ -609,112 +565,5 @@ body {
     margin-right: 0px;
     margin-left: 0px;
     width: 100%;
-  }
-}
-
-/* Payment */
-.payment {
-  max-width: 100px;
-  padding-bottom: 10px;
-
-  &--succesful {
-    filter: invert(1) sepia(1) saturate(25) hue-rotate(40deg) brightness(70%);
-
-  }
-  &--error {
-    filter: invert(1) sepia(1) saturate(89) hue-rotate(287deg) brightness(98%);
-  }
-}
-
-.contact-instructions {
-  border: 1px black solid;
-  padding: 20px;
-  max-width: 500px;
-
-  ol {
-    padding-inline-start: 10px;
-  }
-
-  li {
-    line-height: 1.4;
-    padding-bottom: 14px;
-  }
-}
-
-
-/* Blog */
-.posts {
-  margin: 20px auto 40px;
-  padding-left: 0px;
-  font-size: 1.5em;
-
-  li {
-    list-style: none;
-  }
-}
-
-.entry-title {
-  color: $primary-color;
-  font-weight: 600!important;
-  font-size: 30px;
-  margin-top: 30px;
-  margin-bottom: 0px;
-  padding: 20px;
-  text-decoration: none;
-}
-
-.entry-metadata {
-  font-size: 14px;
-}
-
-.entry-comments {
-  width: 100%;
-  max-width: 768px;
-  margin-top: 30px;
-}
-
-.entry-readMore {
-  color:$primary-color;
-  font-size: 16px;
-  margin-left: 10px;
-  font-weight: 600;
-}
-
-.entry-main-image {
-  max-width: 100vw;
-  margin-left: -15px;
-  margin-right: -15px;
-}
-
-.entry-image-credits{
-  color: $accent-color;
-  font-size: 12px;
-  margin-top: 5px;
-}
-
-.entry-content {
-  font-size: 20px;
-  line-height: 32px;
-  font-weight: 300;
-  padding: 5px;
-  max-width: 768px;
-
-  p {
-    font-family: $font-family-base;
-  }
-
-  h3 {
-    margin-top: 50px;
-    color: $primary-color;
-  }
-}
-
-.entry-anchor-to-content{
-  text-decoration: inherit;
-  color: inherit;
-
-  &:visited {
-    text-decoration: inherit;
-    color: inherit;
   }
 }
