@@ -1,20 +1,20 @@
 ---
 layout: default
-title: Servicio de Chat
+title: Servicio de Correo
 ---
 
 <section class="band band--mini bg-white"></section>
 
 <section class="band bg-white">
   <div class="service-description service-description--pay">
-    <h2>Consulta por Chat</h2>
+    <h2>Consulta por correo</h2>
     <div class="service-price">
-      <span>8</span>€
+      <span>10</span>€
     </div>
-    <img src="media/icon-whatsapp.svg" class="icon">
+    <img src="media/icon-gmail.svg" class="icon">
     <p>
-      Si tienes una pregunta breve o simplemente te encuentras más cómodo chateando, utiliza este medio
-      (disponible en WhatsApp)
+      Si prefieres contarnos tu situación de forma más pausada y/o extensa, mándanos un correo y te responderemos con
+      información detallada sobre tus dudas y con herramientas o ejercicios que te serán muy útiles para mejorar.
     </p>
     <div id="paypal-button-container"></div>
 
@@ -53,9 +53,9 @@ title: Servicio de Chat
 
       // Wait for the PayPal button to be clicked
       payment: function (data, actions) {
-        const PRICE = '8';
+        const PRICE = '10';
         const CURRENCY = 'EUR';
-        const SERVICE = 'Servicio de chat';
+        const SERVICE = 'Servicio de correo';
         const ISO_DATE = new Date().toISOString();
 
         return actions.payment.create({
@@ -70,7 +70,7 @@ title: Servicio de Chat
             },
           ],
           redirect_urls: {
-            return_url: '/servicio-chat-ok.html',
+            return_url: '/servicio-correo-ok.html',
             cancel_url: '/error-pago.html'
           }
         });
