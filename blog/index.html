@@ -15,10 +15,12 @@ title: Blog
         <h2 class="entry-title">{{ post.title }}</h2>
         <span class="entry-metadata">{{post.author }}, {{ post.date | date_to_string }}</span>
         <article class="entry-content">
-          {{ post.content | strip_html | truncatehtml | truncatewords: 35 }}<span class="entry-readMore">(leer más...)</span>
+          {{ post.content | strip_html | truncatehtml | truncatewords: 35 }}<span class="entry-readMore">(leer
+            más...)</span>
         </article>
       </section>
     </li>
   </a>
   {% endfor %}
 </ul>
+<section class="band band--mini bg-white"></section>

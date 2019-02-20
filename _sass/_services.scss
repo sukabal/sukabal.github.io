@@ -1,0 +1,153 @@
+.services-mini-cards {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  justify-content: center;
+  max-width: 768px;
+
+  @media all and (max-width: 719px) {
+    justify-content: flex-start;
+  }
+
+  @media all and (max-width: 520px) {
+    width: 100%;
+
+  }
+}
+
+.service-mini {
+  align-items: stretch;
+  width: 33%;
+
+  @media all and (max-width: 719px) {
+    width: 50%;
+  }
+
+  @media all and (max-width: 520px) {
+    width: 100%;
+  }
+
+  .service-mini-content {
+    padding: 20px;
+    margin: 8px;
+    background-color: $grey-light-color;
+    height: 280px;
+
+    @media all and (max-width: 719px) {
+      height: 320px;
+    }
+
+    @media all and (max-width: 400px) {
+      height: 170px;
+    }
+  }
+
+  .service-mini-title {
+    color: $accent-color;
+    margin-top: 10px;
+
+    @mixin service-icon() {
+      display: block;
+      content: ' ';
+      background-size: 28px 28px;
+      height: 28px;
+      width: 28px;
+      margin-bottom: 12px;
+      margin-top: 5px;
+    }
+
+    &.chat:before {
+      @include service-icon();
+      background-image: url('/media/icon-chat.svg');
+    }
+
+    &.email:before {
+      @include service-icon();
+      background-image: url('/media/icon-email.svg');
+    }
+
+    &.call:before {
+      @include service-icon();
+      background-image: url('/media/icon-call.svg');
+    }
+
+    a {
+      color: $accent-color;
+    }
+  }
+
+  .service-mini-text {
+    max-width: 90%;
+    font-size: 13px;
+  }
+}
+
+
+@mixin service-extra() {
+  padding: 30px;
+  max-width: 450px;
+
+  h2 {
+    margin-top: -15px;
+  }
+}
+
+.service-band-with-box {
+  display: flex;
+  flex-flow: row nowrap;
+  padding-top: 50px;
+
+
+  @media all and (max-width: 719px) {
+    flex-wrap: wrap;
+  }
+
+  @media all and (max-width: 400px) {
+    flex-wrap: wrap;
+  }
+}
+
+.service-custom {
+ background-color: $accent-light-color;
+ @include service-extra();
+ margin-right: 100px;
+
+  @media all and (max-width: 719px) {
+    margin-right: 0px;
+  }
+}
+
+.service-custom-photo{
+  background-image: url('/media/photos/photo-agenda.jpg');
+  margin-right: -50px;
+  margin-left: -50px;
+
+  @media all and (max-width: 719px) {
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+  }
+ }
+
+
+.service-enterprise {
+  background-color: $primary-color;
+  @include service-extra();
+  margin-left: 100px;
+
+  @media all and (max-width: 719px) {
+    margin-left: 0px;
+  }
+}
+
+.service-enterprise-photo{
+  background-image: url('/media/photos/photo-enterprise.jpg');
+  margin-left: -50px;
+  margin-right: -50px;
+
+  @media all and (max-width: 719px) {
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+  }
+}

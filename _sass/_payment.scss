@@ -1,6 +1,6 @@
 .payment {
-  max-width: 100px;
-  padding-bottom: 10px;
+  max-width: 150px;
+  padding-bottom: 20px;
 
   &--succesful {
     filter: invert(1) sepia(1) saturate(25) hue-rotate(40deg) brightness(70%);
@@ -9,10 +9,15 @@
   &--error {
     filter: invert(1) sepia(1) saturate(89) hue-rotate(287deg) brightness(98%);
   }
+
+  &--icon {
+    max-width: 200px;
+    margin-bottom: 20px;
+  }
 }
 
 .contact-instructions {
-  border: 1px black solid;
+  border: 1px $primary-color solid;
   padding: 20px;
   max-width: 500px;
 
