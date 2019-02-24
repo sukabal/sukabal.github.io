@@ -8,15 +8,17 @@ title: Servicio de Chat
 <section class="band bg-white">
   <div class="service-description service-description--pay">
     <h2>Consulta por Chat</h2>
-    <div class="service-price">
-      <span>8</span>€
-    </div>
     <img src="media/icon-whatsapp.svg" class="icon">
+    <div class="service-price">
+      <span>{{site.data.prices.chat}}</span>€
+    </div>
+
+    <div id="paypal-button-container"></div>
+
     <p>
       Si tienes una pregunta breve o simplemente te encuentras más cómodo chateando, utiliza este medio
-      (disponible en WhatsApp)
+      (disponible por WhatsApp).
     </p>
-    <div id="paypal-button-container"></div>
 
   </div>
 
@@ -53,7 +55,7 @@ title: Servicio de Chat
 
       // Wait for the PayPal button to be clicked
       payment: function (data, actions) {
-        const PRICE = '8';
+        const PRICE = '{{site.data.prices.chat}}';
         const CURRENCY = 'EUR';
         const SERVICE = 'Servicio de chat';
         const ISO_DATE = new Date().toISOString();
@@ -79,7 +81,6 @@ title: Servicio de Chat
       // Wait for the payment to be authorized by the customer
       onAuthorize: function (data, actions) {
         return actions.payment.execute().then(function () {
-          window.console.log('Payment Complete!');
           actions.redirect();
         });
       },

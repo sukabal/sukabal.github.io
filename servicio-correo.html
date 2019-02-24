@@ -8,15 +8,17 @@ title: Servicio de Correo
 <section class="band bg-white">
   <div class="service-description service-description--pay">
     <h2>Consulta por correo</h2>
-    <div class="service-price">
-      <span>10</span>€
-    </div>
     <img src="media/icon-gmail.svg" class="icon">
+    <div class="service-price">
+      <span>{{site.data.prices.correo}}</span>€
+    </div>
+
+    <div id="paypal-button-container"></div>
+
     <p>
       Si prefieres contarnos tu situación de forma más pausada y/o extensa, mándanos un correo y te responderemos con
       información detallada sobre tus dudas y con herramientas o ejercicios que te serán muy útiles para mejorar.
     </p>
-    <div id="paypal-button-container"></div>
 
   </div>
 
@@ -53,7 +55,7 @@ title: Servicio de Correo
 
       // Wait for the PayPal button to be clicked
       payment: function (data, actions) {
-        const PRICE = '10';
+        const PRICE = '{{site.data.prices.correo}}';
         const CURRENCY = 'EUR';
         const SERVICE = 'Servicio de correo';
         const ISO_DATE = new Date().toISOString();
@@ -79,7 +81,6 @@ title: Servicio de Correo
       // Wait for the payment to be authorized by the customer
       onAuthorize: function (data, actions) {
         return actions.payment.execute().then(function () {
-          window.console.log('Payment Complete!');
           actions.redirect();
         });
       },

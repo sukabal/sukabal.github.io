@@ -75,7 +75,6 @@ body {
 
   &--motto {
     margin-top: 25px;
-    font-style: italic;
   }
 }
 
@@ -114,7 +113,7 @@ body {
 }
 
 .footer {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 100;
   line-height: 22px;
   color: white;
@@ -124,6 +123,7 @@ body {
   padding: 22px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 
@@ -231,16 +231,18 @@ body {
   &--pay {
     padding-top: 0px;
     width: 90%;
-    max-width: 500px;
+    max-width: 450px;
     margin-bottom: 100px;
     background-color: $grey-light-color;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+    border-radius: 5px;
 
     .icon {
       max-width: 150px;
-      margin-bottom: 20px;
+      margin: 20px;
+      padding-top: 10px;
     }
   }
 
@@ -250,15 +252,16 @@ body {
 
   p {
     margin-bottom: 0px;
-    font-size: 20px;
+    font-size: 12px;
     padding: 20px;
+    font-weight: 300;
   }
 
   .service-price {
-    font-size: 52px;
+    font-size: 25px;
     font-weight: 300;
     font-family: $font-family-title;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 }
 
