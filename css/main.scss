@@ -458,7 +458,7 @@ body {
     width: 50%;
   }
 
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 500px) {
     width: 100%;
   }
 
@@ -472,8 +472,8 @@ body {
       height: 320px;
     }
 
-    @media all and (max-width: 400px) {
-      height: 180px;
+    @media all and (max-width: 500px) {
+      height: 200px;
     }
   }
 
@@ -509,7 +509,7 @@ body {
 
   .service-mini-text {
     max-width: 90%;
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 

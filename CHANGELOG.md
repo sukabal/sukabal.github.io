@@ -6,6 +6,10 @@ All notable changes to this project will be documented in this file.
 ### Added
 - Add paypal integration (sandbox) for:
   - servicio-chat
+  - servicio-correo
+  - servicio-llamada
+- Several style improvements
+- Basic blog
 
 - Small arrows to scroll in main view
 
