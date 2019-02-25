@@ -5,13 +5,12 @@ comments: true
 
 <section class="band bg-white">
   <h2 class="entry-title">{{ page.title }}</h2>
-  <span class="entry-metadata">{{page.author }}, {{ page.date | date: '%d-%b-%Y' }}</span>
+  <span class="entry-metadata">{{page.author }}, {{ page.date | date_to_string }}</span>
   <article class="entry-content">
     {{content}}
   </article>
   <div id="disqus_thread" class="entry-comments"></div>
 </section>
-
 
 <script>
   // RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
