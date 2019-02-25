@@ -73,3 +73,12 @@
     color: inherit;
   }
 }
+
+.entry-image-link {
+  padding: 20px;
+
+  &:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+  }
+}
