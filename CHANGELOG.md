@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 ## Unreleased
 
 ### Added
-- Add paypal integration (sandbox) for:
+- Add paypal integration for:
   - servicio-chat
   - servicio-correo
   - servicio-llamada
