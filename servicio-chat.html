@@ -30,7 +30,7 @@ title: Servicio de Chat
     paypal.Button.render({
 
       // Set your environment
-      env: 'sandbox', // sandbox | production
+      env: '{{site.data.prices.paypal_env}}', // sandbox | production
 
       // Specify the style of the button
       style: {
@@ -44,10 +44,9 @@ title: Servicio de Chat
 
       // PayPal Client IDs - replace with your own
       // Create a PayPal app: https://developer.paypal.com/developer/applications/create
-
       client: {
-        sandbox: 'ASQLFYiWXtNKSaoElD6eFJgM0ct9xQsywE015DpPGq1ayhJOstEa8IwnXVTYQNAsicHbAdSq64qKIOgF',
-        production: '<insert production client id>'
+        sandbox: '{{site.data.prices.paypal_sandbox}}',
+        production: '{{site.data.prices.paypal_production}}'
       },
 
       // Show the buyer a 'Pay Now' button in the checkout flow

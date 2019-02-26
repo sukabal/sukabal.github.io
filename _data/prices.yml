@@ -1,3 +1,6 @@
 chat: '8'
 correo: '10'
 llamada: '15'
+paypal_env: 'sandbox' # sandbox | production
+paypal_sandbox: 'ASQLFYiWXtNKSaoElD6eFJgM0ct9xQsywE015DpPGq1ayhJOstEa8IwnXVTYQNAsicHbAdSq64qKIOgF'
+paypal_production: 'Ad3sEhF4dUK69UdKb5Toax8UZexgXe6F6yOS4p_-REB-Do-nZiSi81jNlVkIvZW8oWDXEfJKiCFYMziv'
