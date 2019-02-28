@@ -4,10 +4,11 @@ title: "Nace ahoratigo"
 permalink: "/blog/nace-ahoratigo"
 author: Suca Baldor
 main-image: /blog/images/nace-ahoratigo-amanecer.jpg
+main-image-author: Federico Respini (@unsplash)
 date: 2019-02-05
 ---
 
-![Nace ahoratigo]({{ page.main-image}}){:class="entry-main-image" :title="Foto de Federico Respini (@unsplash)"}
+![{{ page.title }}]({{ page.main-image}}){:class="entry-main-image" :title="{{ page.main-image-author }}" }
 
 ¿Qué es *ahoratigo*? Probablemente lo más sencillo es comenzar por presentar quién está detrás de este proyecto, *Suca Baldor* y su idea. Suca es una psicóloga y madre preocupada por los demás, que después de casi 6 años sin ejercer (la edad de su hija mayor), se pregunta cómo volver al trabajo de una forma distinta, con la que poder ayudar a los demás y a la vez seguir ocupándose de sus hijos.
 
