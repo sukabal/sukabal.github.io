@@ -581,3 +581,19 @@ body {
     width: 100%;
   }
 }
+
+.service-button-subscribe {
+    padding: 10px 24px;
+    background-color: $grey-light-color;
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: 300;
+    font-family: $font-family-title;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: $black-color;
+      cursor: pointer;
+      color: $white-color;
+    }
+}
