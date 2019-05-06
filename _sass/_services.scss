@@ -107,9 +107,11 @@
  background-color: $accent-light-color;
  @include service-extra();
  margin-right: 100px;
+ margin-left: -60px;
 
   @media all and (max-width: 719px) {
     margin-right: 0px;
+    margin-left: 0px;
   }
 }
 
@@ -130,9 +132,11 @@
   background-color: $primary-color;
   @include service-extra();
   margin-left: 100px;
+  margin-right: -60px;
 
   @media all and (max-width: 719px) {
     margin-left: 0px;
+    margin-right: 0px;
   }
 }
 
