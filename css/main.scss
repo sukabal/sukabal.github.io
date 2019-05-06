@@ -126,6 +126,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 
@@ -239,9 +242,6 @@ body {
     max-width: 450px;
     margin-bottom: 100px;
     background-color: $grey-light-color;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
     border-radius: 5px;
 
     .icon {
