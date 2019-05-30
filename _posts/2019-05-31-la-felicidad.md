@@ -12,7 +12,7 @@ date: 2019-05-31
 
 *¿Es posible estar siempre feliz?* No. *¿Es posible ser feliz?* Yo creo que sí. Algunos en estos momentos os estaréis planteando esta pregunta, y si no seguro que en algún momento os la habéis hecho.
 
-Voy a la estantería de Psicología de mi biblioteca municipal más cercana y qué me encuentro...libros y más libros de autoayuda, la mayoría dando las claves “mágicas” para ser feliz. Y me pregunto, ¿es esto posible?, ¿es verdad todo lo que prometen estos libros?. Como psicóloga me pregunto... ¿qué se entiende por FELICIDAD?. ¿Un estado constante de alegría? Esto puedo afirmar que, aparte de prácticamente imposible, es hasta perjudicial para la salud mental de la persona.
+Voy a la estantería de Psicología de mi biblioteca municipal más cercana y qué me encuentro...libros y más libros de autoayuda, la mayoría dando las claves “mágicas” para ser feliz. Y me pregunto, ¿es esto posible?, ¿es verdad todo lo que prometen estos libros?. Como psicóloga me pregunto qué se entiende por FELICIDAD, ¿un estado constante de alegría? Esto puedo afirmar que, aparte de prácticamente imposible, es hasta perjudicial para la salud mental de la persona.
 
 Con esta idea he empezado a impartir unas máster class de **Inteligencia Emocional**, para explicar entre otras cosas qué son las emociones y cómo su mala gestión o represión puede conllevar problemas en nuestras vidas. Las emociones como respuestas psicofisiológicas adaptativas que son no se pueden contener ni reprimir, no se puede no sentir una emoción, lo que puedes trabajar es *tu respuesta* a esa emoción. Al ser adaptativa, aunque a veces no sea evidente, tiene su finalidad y nos ayuda a afrontar alguna situación en particular, la que la desencadenó, así que juega a nuestro favor, no en contra.
 
