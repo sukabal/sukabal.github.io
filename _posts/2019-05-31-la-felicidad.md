@@ -10,7 +10,7 @@ date: 2019-05-31
 
 ![{{ page.title }}]({{ page.main-image}}){:class="entry-main-image" :title="{{ page.main-image-author }}" }
 
-*¿Es posible estar siempre feliz?* No. *¿Es posible ser feliz?* Yo creo que sí. Algunos en estos momentos os estaréis plateando esta pregunta a vosotros mismos, y si no seguro que en algún momento os la habéis hecho.
+*¿Es posible estar siempre feliz?* No. *¿Es posible ser feliz?* Yo creo que sí. Algunos en estos momentos os estaréis planteando esta pregunta, y si no seguro que en algún momento os la habéis hecho.
 
 Voy a la estantería de Psicología de mi biblioteca municipal más cercana y qué me encuentro...libros y más libros de autoayuda, la mayoría dando las claves “mágicas” para ser feliz. Y me pregunto, ¿es esto posible?, ¿es verdad todo lo que prometen estos libros?. Como psicóloga me pregunto... ¿qué se entiende por FELICIDAD?. ¿Un estado constante de alegría? Esto puedo afirmar que, aparte de prácticamente imposible, es hasta perjudicial para la salud mental de la persona.
 
