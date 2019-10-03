@@ -1,0 +1,34 @@
+---
+layout: post
+title: "La autoestima"
+permalink: "/blog/la-autoestima"
+author: Suca Baldor
+main-image: /blog/images/la-autoestima.jpg
+main-image-author: Suca Baldor
+date: 2019-10-10
+---
+
+![{{ page.title }}]({{ page.main-image}}){:class="entry-main-image" :title="{{ page.main-image-author }}" }
+
+Quisiera empezar este artículo con un ejercicio para todos los lectores. Haceros esta pregunta: **del 1 al 10, qué valoración os dáis y por qué?** Algunos os habréis infravalorado, otros os habréis valorado de más, otros habréis sido realistas y os habréis puesto la valoración justa. En eso consiste básicamente la autoestima, algo que parece sumamente simple... ¿cómo
+puede ser tan complicado e influenciar tanto y en tantos aspectos de nuestra vida? Esto es, en parte, debido a la dificultad que implica poder valorar nuestro yo, cuando la mayoría de nosotros pasamos preguntándonos toda la vida: "¿QUIÉN SOY YO?”
+
+La autoestima es la valoración personal y consecuentemente la percepción positiva o negativa que tenemos de nosotros mismos, en resumen *la valoración que hacemos del yo*. Pero ¿qué es el yo?, es un termino un tanto difícil de definir porque se ha usado en muchos ámbitos, pero podríamos decir para lo que nos interesa, que es la unidad dinámica (porque cambia constantemente) que formamos conscientemente de nuestra identidad y nuestra relación con el medio. A la pregunta del porqué al principio, algunos habréis pensado, por ejemplo, *“Porque soy guapo”*, otros en cambio habréis pensado *“soy más guapo que la mayoría...”*. Lo cierto es que la mayoría de la gente, lo diga o no, se valora en comparación con otros.
+
+
+El yo se forma con características genéticas con las que nacemos (nuestro temperamento) y con constructos o ideas que formamos a lo largo de nuestra vida, y por eso la identidad es dinámica, siempre está cambiando, al igual que nuestra autoestima. La percepción que tenemos de nosotros mismos es casi siempre en relación con los demás; a medida que crecemos nos comparamos con la gente que nos rodea: nuestros padres y hermanos, compañeros del colegio, de la universidad, compañeros de trabajo... Y Así nuestra autoestima se va formando, dependiendo de las vivencias que tengamos a lo largo de nuestra vida y cómo éstas modifiquen nuestro Yo.
+
+Hay quien empieza su vida con una autoestima baja, porque se cree poco agraciado, a lo mejor por nacer en una familia de guapos. Al empezar el colegio, destaca en algo y piensa: “en comparación con los demás, no estoy tan mal después de todo”, cambiando su percepción y su buena autoestima.
+
+Volviendo al párrafo del principio, si os puntuasteis por encima de la realidad tendréis una alta autoestima y al revés una baja autoestima. Si os puntuáis justamente tendréis una **buena autoestima**: saber en lo que se es bueno en su justa medida. Nunca vamos a ser el número uno en todo lo que nos planteemos y nunca vamos a ser del gusto de todos, pero saber disfrutar de cada logro o no rendirnos ante la adversidad son motivos suficientes para subir la puntuación de un modo realista. Si formas tu identidad en comparación con un grupo no realista, tu autoestima no estará ajustada a la realidad y consecuentemente estará infra o sobreestimada.
+
+Por otro lado, tener una alta autoestima puede ser igual de malo que infravalorarse, si nos creemos el más inteligente o el más guapo, a lo mejor porque en nuestro entorno destacamos, es fácil que en situaciones en las que esta percepción de nosotros mismos se tambalee, no queramos enfrentarla y huyamos de ella. No es lo mismo un pez grande en una pecera que en el mar abierto ¿verdad?. Por otro lado, infravalorarse casi siempre produce miedo no realista, ya que la valoración ya no lo es. Es muy diferente tener miedo a hablar en público porque no se sabe del tema del que se habla, que tener miedo porque no nos creemos capaces, aunque seamos unos expertos en él área.
+
+Hace poco, hablando de las emociones, me preguntaron porqué se sentían celos, una emoción secundaria; yo les dije que por miedo a perder a la otra persona, que si tenía motivos para ese miedo, y no los había, sólo era miedo por creer que no era lo suficientemente buena (claramente esta persona se infravaloraba, ya que si la otra persona la había elegido como pareja, ya tenía la muestra de que la valoraba mucho mas que ella misma). Que en el pasado hayamos tenido relaciones que no nos valoren puede menoscabar gravemente nuestra autoestima, pero no debemos olvidar que nosotros formamos nuestra identidad, no las circunstancias puntuales de nuestra vida. Después de un fracaso o una decepción, sea sentimental o profesional, hay que hacer un reajuste de nuestra percepción y valorarnos justamente.
+
+Para acabar, me gustaría añadir que el abordaje de la autoestima, y consecuentemente de nuestra identidad, es complejo ya que tiene muchos componentes involucrados, como por ejemplo el concepto de apego, que por su complejidad me gustaría tratar en futuros artículos.
+
+Aunque *“Cuando nos despertamos, no hemos de preguntarnos quiénes somos”*, como dice Todd Heatherthon (psicólogo de la Universidad de Darmouth, quien estudia las bases cerebrales de la identidad), tanto la forma en la que nuestro cerebro produce el Yo, como su valoración es un enigma que apenas hace unas pocas décadas empezamos a investigar. Lo
+que sí está claro es que se puede trabajar en ello, a través de nuestras cogniciones, de los pensamientos e ideas que tenemos de nosotros mismos, formando una percepción lo más ajustada a la realidad. Para ello recomiendo el libro del psicólogo Raimon Gaja *“Bienestar, autoestima y felicidad”* en el que expone las herramientas que ha aportado la Psicología Cognitiva en este área. Me gustaría igualmente recomendar otro libro, esta vez de Luis Rojas Marcos, titulado *“La Autoestima”* y acabar este artículo con una una frase que encabeza el capítulo 4º del mismo y que sale de una cita de El Principito: **"Es mucho más difícil juzgarse a sí mismo que a los demás. Si logras juzgarte bien a ti mismo eres un verdadero sabio.”**.
+
+A lo mejor a sabio no llegas, pero sin duda vas en camino, tendrás una buena autoestima y estarás mas cerca de tu bienestar. Aprovechad y preguntad a vuestro entorno la misma pregunta del principio, si tenéis hijos ved si la percepción que hacen de su Yo se adapta a la realidad. Apoyad una buena autoestima, felicitándoles cuando se esfuerzan por el empeño en el trabajo, no tanto por los resultados (porque siempre va a ver quien lo haga mejor o peor, pero nadie duda que esforzarse y hacerlo lo mejor que se pueda es una buena actitud). Al igual que cuando hagan algo bien, felicitadles siempre y decidles un porqué después, para no inflar su autoestima (pero no dejéis de felicitadles para que no se infravaloren). Es complicado pero seguro que lo haréis bien, no os subestiméis y a trabajar en vuestras valoraciones personales.
