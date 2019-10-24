@@ -16,6 +16,6 @@ Por eso os anuncio una iniciativa que he organizado conjuntamente con **Carmen B
 
 Aquí os dejo el cartel con los datos principales:
 
-![Jornadas: Tenemos que hablar](/blog/images/jornadas-tenemos-que-hablar.png)
+<img src="/blog/images/jornadas-tenemos-que-hablar.png" alt="Jornadas: Tenemos que hablar" style="max-width: 90vw;">
 
 Cualquier duda podéis contactarme en el teléfono: +34 669 75 92 25 (llamada o WhatsApp). Saludos!
