@@ -14,3 +14,8 @@ Os invito a un webinar gratuito que daré este próximo **Viernes 3 de abril, a 
 
 Se trata de un seminario que impartiré para **https://menntunweb.com/**. Para participar, basta con enviar un correo con tus datos a
 [info@menntunweb.com](mailto:info@menntunweb.com)
+
+---
+
+[Editado]
+Si estás interesad@ en ver los vídeos de este webinar, están disponibles en abierto [en mi canal de youtube](https://www.youtube.com/watch?v=KOTVouJXTPg&list=PL3QmsXAP_oCRsGcayoItLx-3AF3nZOYTB). Si tienes cualquier duda o comentario, contáctame, y si crees que son útiles, compártelos.

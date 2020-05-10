@@ -27,3 +27,5 @@ Gracias, animo y a luchar que esta guerra aún no se ha acabado.
 ---
 
 PD. Este artículo fue publicado primero en [Emociones en tiempos de Pandemia](https://proyectocrece.eldiariomontanes.es/emociones-en-tiempos-de-pandemia/) dentro de la iniciativa [Proyecto Crece](https://proyectocrece.eldiariomontanes.es/), liderada por **El Diario Montañés**.
+
+Comentar también que recientemente he impartido un webinar gratuito sobre el tema. Puedes ver mi [anterior artículo](https://ahoratigo.com/blog/emociones-pandemia), que incluye enlace a los vídeos.
