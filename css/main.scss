@@ -1,14 +1,25 @@
 ---
 ---
 
-@import 'fonts';
-@import 'colors';
+@import "fonts";
+@import "colors";
 
-@import 'about';
-@import 'blog';
-@import 'payment';
-@import 'services';
+@import "about";
+@import "blog";
+@import "payment";
+@import "services";
 
+/* Size */
+$breakpoint-mobile: 480px;
+$breakpoint-tablettablet: 768px;
+
+@mixin respond($breakpoint) {
+  @if $breakpoint==mobile {
+    @media only screen and (max-width: $breakpoint-mobile) {
+      @content;
+    }
+  }
+}
 
 /* General */
 body {
@@ -16,6 +27,8 @@ body {
   padding: 0;
   font-family: $font-family-base;
   background-color: $white-color;
+
+  font-size: 16px;
 }
 
 .page {
@@ -58,7 +71,7 @@ body {
   display: flex;
   align-items: center;
   opacity: 0.8;
-  box-shadow: inset 0 0 0 100vmax rgba($primary-color, .3);
+  box-shadow: inset 0 0 0 100vmax rgba($primary-color, 0.3);
   background-position-x: center;
 
   &__container {
@@ -83,6 +96,10 @@ body {
     margin-bottom: 20px;
     padding-bottom: 10px;
     padding-top: 40px;
+
+    @include respond(mobile) {
+      font-size: 40px;
+    }
   }
 
   &__subtitle {
@@ -95,9 +112,17 @@ body {
     line-height: 1.4em;
     padding-left: 10px;
     padding-right: 10px;
-  
+
     &--motto {
+      font-style: italic;
       margin-top: 25px;
+      animation-name: moveInLeft;
+      animation-duration: 3s;
+      animation-timing-function: ease-in;
+    }
+
+    @include respond(mobile) {
+      font-size: 1em;
     }
   }
 
@@ -112,34 +137,65 @@ body {
 
     animation-name: heartFadeInOut;
     animation-duration: 4s;
-    animation-iteration-count: 15;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
 
-    &:hover{
+    &:hover {
       cursor: pointer;
       filter: invert(0);
-      transform: scale(1.2s);      
+      transform: scale(1.2s);
+    }
+  }
+
+  // A hear beating
+  @keyframes heartFadeInOut {
+    0% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(0.97);
+    }
+    35% {
+      transform: scale(0.9);
+    }
+    45% {
+      transform: scale(1.1);
+    }
+    55% {
+      transform: scale(0.9);
+    }
+    65% {
+      transform: scale(1.1);
+    }
+    75% {
+      transform: scale(1.03);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes moveInLeft {
+    0% {
+      opacity: 0;
+      transform: translateY(100rem);
+    }
+  
+    80% {
+      opacity: 0.5;
+      transform: translateY(-1rem);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
     }
   }
 }
 
-@keyframes heartFadeInOut {
-  0% {transform: scale(1);}
-  25% {transform: scale(.97);}
-  35% {transform: scale(.9);}
-  45% {transform: scale(1.1);}
-  55% {transform: scale(.9);}
-  65% {transform: scale(1.1);}
-  75% {transform: scale(1.03);}
-  100% {transform: scale(1);}
-}
-
-
 /* --- refactor --- */
 
 /* Main page */
-
-
-
 
 .linkToAction {
   color: $accent-color;
@@ -169,14 +225,11 @@ body {
       opacity: 0.6;
 
       &:hover {
-        opacity: 1.0;
+        opacity: 1;
       }
     }
   }
 }
-
-
-
 
 /* Common elements */
 .band {
@@ -239,13 +292,13 @@ body {
     margin-left: auto;
     margin-right: auto;
 
-    @media all and (max-width: 719px){
+    @media all and (max-width: 719px) {
       // width: 100%;
     }
   }
 
   &--solid {
-    opacity: 1.0;
+    opacity: 1;
   }
 }
 
@@ -260,7 +313,7 @@ body {
   line-height: 1.4;
   margin-bottom: 8px;
 
-  &--last-paragraph{
+  &--last-paragraph {
     padding-bottom: 60px;
   }
 
@@ -318,8 +371,6 @@ body {
   }
 }
 
-
-
 /* Header */
 .header {
   display: flex;
@@ -329,7 +380,7 @@ body {
   z-index: 999;
   width: 100%;
   background-color: $white-color;
-  box-shadow: 0 3px 7px 0 rgba(0,0,0,.1);
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -342,7 +393,7 @@ body {
     text-decoration: none;
     color: $accent-light-color;
 
-    &:hover{
+    &:hover {
       color: $accent-color;
     }
   }
@@ -371,13 +422,13 @@ body {
     height: 100vh;
     width: 100vw;
     position: absolute;
-    background: #E9F1F7;
+    background: #e9f1f7;
     top: 75px;
     opacity: 0.9;
     font-size: 24px;
     line-height: 60px;
 
-    &--is-visible{
+    &--is-visible {
       display: block;
     }
   }
@@ -418,7 +469,6 @@ body {
     border-radius: 3px;
     cursor: pointer;
   }
-
 }
 
 /* Call to Action buttons */
