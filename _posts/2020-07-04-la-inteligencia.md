@@ -30,9 +30,6 @@ Está claro que hay niños que son mejores en habilidades físicas y que otros l
 
 Para acabar, aunque no estoy de acuerdo con esta frase del gran Pedagogo Francisco Giner de los Ríos, me gustaría dejarla aquí para  fomentar la reflexión: *“Todos los niños son inteligentes hasta que entre los maestros y los padres se encargan de embrutecerlos”*. Ahí lo dejo.
 
-
-Suca Baldor. Psicóloga
-
 ---
 
 PD. Este artículo fue publicado primero en el [Proyecto Crece](https://proyectocrece.eldiariomontanes.es/la-inteligencia-quien-es-mas-inteligente), iniciativa liderada por [El Diario Montañes](https://proyectocrece.eldiariomontanes.es/), con la que colaboro.
