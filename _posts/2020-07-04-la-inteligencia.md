@@ -35,4 +35,4 @@ Suca Baldor. Psicóloga
 
 ---
 
-PD. Este artículo fue publicado primero en el [Proyecto Crece](https://proyectocrece.eldiariomontanes.es/la-inteligenciaa-quien-es-mas-inteligente), iniciativa liderada por [El Diario Montañes](https://proyectocrece.eldiariomontanes.es/), con la que colaboro.
+PD. Este artículo fue publicado primero en el [Proyecto Crece](https://proyectocrece.eldiariomontanes.es/la-inteligencia-quien-es-mas-inteligente), iniciativa liderada por [El Diario Montañes](https://proyectocrece.eldiariomontanes.es/), con la que colaboro.
