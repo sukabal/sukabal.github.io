@@ -1,0 +1,128 @@
+.hero-header {
+  background: url(/media/photos/suca.png) 0% 0% / cover;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  opacity: 0.8;
+  // margin-top: 40px;
+  background-position-x: center;
+  background-color: $grey-light-color;
+
+  &__container {
+    margin: auto;
+    display: flex;
+    justify-items: center;
+    flex-flow: column wrap;
+    justify-content: center;
+    max-width: 800px;
+  }
+
+  &__title {
+    color: $white-color;
+    font-size: 55px;
+    font-family: $font-family-title;
+    font-weight: 300;
+    text-shadow: 1px 1px 1px #666;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    padding-top: 40px;
+
+    @include respond(mobile) {
+      font-size: 40px;
+    }
+  }
+
+  &__subtitle {
+    color: $white-color;
+    font-family: $font-family-title;
+    font-weight: 300;
+    margin: auto;
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 1.4em;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    &--motto {
+      font-style: italic;
+      margin-top: 25px;
+      animation-name: moveInLeft;
+      animation-duration: 3s;
+      animation-timing-function: ease-in;
+    }
+
+    @include respond(mobile) {
+      font-size: 1em;
+    }
+  }
+
+  &__arrow-down {
+    max-width: 50px;
+    margin-top: 40px;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    filter: invert(1) sepia(1);
+
+    animation-name: heartFadeInOut;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+
+    &:hover {
+      cursor: pointer;
+      filter: invert(0);
+      transform: scale(1.2s);
+    }
+  }
+
+  // A hear beating
+  @keyframes heartFadeInOut {
+    0% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(0.97);
+    }
+    35% {
+      transform: scale(0.9);
+    }
+    45% {
+      transform: scale(1.1);
+    }
+    55% {
+      transform: scale(0.9);
+    }
+    65% {
+      transform: scale(1.1);
+    }
+    75% {
+      transform: scale(1.03);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes moveInLeft {
+    0% {
+      opacity: 0;
+      transform: translateY(100rem);
+    }
+
+    80% {
+      opacity: 0.5;
+      transform: translateY(-1rem);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

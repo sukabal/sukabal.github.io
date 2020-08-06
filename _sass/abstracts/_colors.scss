@@ -1,0 +1,58 @@
+/* Colors */
+$primary-color: #0d6684;
+$dark-primary-color: #004e66;
+$secondary-color: #0fa3b1;
+$accent-color: #ff8213;
+$accent-light-color: #ffb16c;
+
+$white-color: white;
+$black-color: #222;
+$dark-grey-color: #656565;
+$grey-light-color: #e9f1f7;
+
+/* Utilities */
+// Background color
+.bg-primary {
+  background-color: $primary-color;
+}
+.bg-secondary {
+  background-color: $secondary-color;
+}
+.bg-accent {
+  background-color: $accent-color;
+}
+.bg-accent-light {
+  background-color: $accent-light-color;
+}
+.bg-grey {
+  background-color: $dark-grey-color;
+}
+.bg-light-grey {
+  background-color: $grey-light-color;
+}
+.bg-white {
+  background-color: $white-color;
+}
+
+// Color
+.color-primary {
+  color: $primary-color;
+}
+.color-secondary {
+  color: $secondary-color;
+}
+.color-accent {
+  color: $accent-color;
+}
+.color-accent-light {
+  color: $accent-light-color;
+}
+.color-grey {
+  color: $dark-grey-color;
+}
+.color-light-rey {
+  color: $grey-light-color;
+}
+.color-white {
+  color: $white-color;
+}

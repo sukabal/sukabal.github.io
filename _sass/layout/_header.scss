@@ -1,0 +1,30 @@
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  height: 100px;
+  width: 100%;
+  background-color: $grey-light-color;
+  opacity: 0.8;
+
+  .logo {
+    font-family: $font-family-title;
+    font-weight: 900;
+    font-size: 40px;
+    padding-left: 20px;
+
+    a {
+      color: $black-color;
+      // color: $primary-color;
+      text-decoration: none;
+      //   color: $accent-light-color;
+
+      &:hover {
+        color: $accent-color;
+      }
+    }
+  }
+}
