@@ -1,76 +1,80 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>{{ page.title }}</title>
 
-<head>
-  <title>{{ page.title }}</title>
+    <meta charset="utf-8" />
 
-  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+    <!-- link to main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
 
-  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-  <!-- link to main stylesheet -->
-  <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
 
-  <!-- favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130609897-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'UA-130609897-1');
-  </script>
-
-  {% seo %}
-</head>
-
-<body>
-  <header class="header">
-    <div class="logoBox">
-      <span class="logo"><a title="Inicio" href="/">ahoratigo</a></span>
-    </div>
-    <div id="mobileMenu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-
-    <ul class="navbar">
-      <li class="navbar__item"><a title="Servicios" class="navbar__item-link" href="/servicios">Servicios</a></li>
-      <li class="navbar__item"><a title="Nosotros" class="navbar__item-link" href="/nosotros">Nosotros</a></li>
-      <li class="navbar__item"><a title="Blog" class="navbar__item-link" href="/blog">Blog</a></li>
-      <li class="navbar__item"><a title="Contacto" class="navbar__item-link" href="/contacto">Contacto</a></li>
-    </ul>
-
-  </header>
-  <div class="page-container">
-
-    {{ content }}
-
-  </div>
-
-  <footer class="page-footer">
-    <div>2019 ©ahoratigo</div>
-    <!-- <div>Política de Privacidad y Cookies.</div> -->
-  </footer>
-
-  <script>
-    function toggleResponsiveMenu() {
-      var navbar = document.querySelector(".navbar");
-      if (navbar.style.display === 'flex') {
-        navbar.style.display = 'none';
-      } else {
-        navbar.style.display = 'flex';
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130609897-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
       }
-    }
+      gtag("js", new Date());
+      gtag("config", "UA-130609897-1");
+    </script>
 
-    document.getElementById('mobileMenu').addEventListener('click', toggleResponsiveMenu);
-  </script>
-</body>
+    {% seo %}
+  </head>
 
+  <body>
+    <header class="header">
+      <div class="header-logo-box">
+        <span class="logo"><a title="Inicio" href="/">ahoratigo</a></span>
+      </div>
+      <div id="mobileMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="navbar">
+        <li class="navbar__item">
+          <a title="Servicios" class="navbar__item-link" href="/servicios">Servicios</a>
+        </li>
+        <li class="navbar__item">
+          <a title="Nosotros" class="navbar__item-link" href="/nosotros">Nosotros</a>
+        </li>
+        <li class="navbar__item">
+          <a title="Blog" class="navbar__item-link" href="/blog">Blog</a>
+        </li>
+        <li class="navbar__item">
+          <a title="Contacto" class="navbar__item-link" href="/contacto">Contacto</a>
+        </li>
+      </ul>
+    </header>
+    <div class="page-container">
+      {{ content }}
+    </div>
+
+    <footer class="page-footer">
+      <div>2019 ©ahoratigo</div>
+      <!-- <div>Política de Privacidad y Cookies.</div> -->
+    </footer>
+
+    <script>
+      function toggleResponsiveMenu() {
+        var navbar = document.querySelector(".navbar");
+        if (navbar.style.display === "flex") {
+          navbar.style.display = "none";
+        } else {
+          navbar.style.display = "flex";
+        }
+      }
+
+      document.getElementById("mobileMenu").addEventListener("click", toggleResponsiveMenu);
+    </script>
+  </body>
 </html>
