@@ -1,0 +1,135 @@
+---
+layout: default
+title: Bienvenido a ahoratigo.com
+---
+<div class="hero-header">
+  <div class="hero-header__container">
+    <h1 class="hero-header__title">¿Tienes un problema y necesitas consejo?</h1>
+    <p class="hero-header__subtitle">Ahora te podemos ayudar de forma rápida y profesional, allí dónde te encuentres.</p>
+    <p class="hero-header__subtitle hero-header__subtitle--motto">Ahora siempre estamos contigo.</p>
+    <img class="hero-header__arrow-down" src="media/icon-arrow-down.svg"
+      onclick="scrollToId('section-01', {block: 'center'})">
+  </div>
+</div>
+
+<section id="section-01" class="band bg-light-grey">
+  <h2>¿Estás preocupado y necesitas ayuda?</h2>
+  <p class="section-paragraph">¿Tienes problemas y dudas si acudir a un psicólogo? Tal
+    vez incluso
+    has buscado alguno, pero
+    no sabes si la ayuda que pueden ofrecerte es adecuada para ti...
+  </p>
+  <p class="section-paragraph">
+    O quizá te preocupas por el comportamiento de alguien cercano y no sabes cómo manejarte...</p>
+  <!-- <p class="section-paragraph"> Descubre nuestro <a class="linkToAction" href="javascript:scrollToId('btnChat');">servicio
+      de chat</a>
+  </p> -->
+</section>
+
+<div class="section-photo" style="background-image: url('/media/photos/photo-mobile.jpg');"></div>
+
+<section id="section-02" class="band bg-white">
+  <h2 class="color-primary">¿Quieres mejorar?</h2>
+  <p class="section-paragraph">Si tienes un objetivo vital y no sabes cómo alcanzarlo, podemos dotarte de herramientas
+    que te ayuden a conseguirlo.
+    Si sientes que te falta algo, quieres mejorar tu autoestima,
+    tus relaciones personales o tu futuro profesional, podemos ayudarte.</p>
+  <p class="section-paragraph">Si hay cosas en tu vida que no te dejan avanzar y
+    quieres llegar a tu máximo potencial, contáctanos.</p>
+  <!-- <p class="section-paragraph">Conoce nuestro servicio de <a class="linkToAction" href="javascript:scrollToId('btnEmail');">
+      correo electrónico</a></p> -->
+</section>
+
+<div class="section-photo" style="background-image: url('/media/photos/photo-mac.jpg');"></div>
+
+
+<section id="section-03" class="band bg-light-grey">
+  <h2>¿Tienes problemas o simplemente quieres hablar?</h2>
+  <p class="section-paragraph">
+    Si estás triste porque ha ocurrido algo negativo en tu vida y necesitas hablar con alguien, aquí estamos. Si te
+    sientes incomprendido, juzgado, ninguneado o simplemente
+    sólo, puedes acudir a nosotros y te
+    prestaremos el apoyo y comprensión que mereces, ayudándote a superar tus problemas de pareja, familiares o en tu
+    trabajo (incluso con tu mascota).</p>
+  <!-- <p class="section-paragraph">Podemos ayudarte <a class="linkToAction" href="javascript:scrollToId('btnCall');">vía
+      telefónica</a>
+  </p> -->
+</section>
+
+<div class="section-photo" style="background-image: url('/media/photos/photo-chat.jpg');"></div>
+
+<section id="section-04" class="band bg-white">
+  <h2>Pruébalo ahora</h2>
+  <ul class="services">
+    <li class="buttonActionCall">
+      <div id="btnChatWrapper">
+        <button id="btnChat" onclick="location.href='servicio-chat'" type="button">
+          Chat
+          <img src="/media/icon-chat.svg" />
+        </button>
+      </div>
+    </li>
+    <li class="buttonActionCall">
+      <div id="btnEmailWrapper">
+        <button id="btnEmail" onclick="location.href='servicio-correo'" type="button">
+          Correo
+          <img src="/media/icon-email.svg" />
+        </button>
+      </div>
+    </li>
+    <li class="buttonActionCall">
+      <div id="btnCallWrapper">
+        <button id="btnCall" onclick="location.href='servicio-llamada'" type="button">
+          Llamada
+          <img src="/media/icon-call.svg" />
+        </button>
+      </div>
+    </li>
+  </ul>
+  <br>
+  <br>
+</section>
+
+
+<section class="
+  band bg-primary">
+  <h2 class="color-white">Contáctanos</h2>
+  <p class="section-paragraph color-white">
+    Si tienes cualquier pregunta o comentario, visita nuestras redes
+    sociales...
+  </p>
+  <ul class="socialMedia">
+    <li>
+      <a alt="Youtube" href="https://www.youtube.com/user/MariaLuisaBaldor" target="_blank"><img src="/media/icon-youtube.svg"></a>
+    </li>
+    <li>
+      <a alt="Twitter" href="http://twitter.com/ahoratigo" target="_blank"><img src="/media/icon-twitter.svg"></a>
+    </li>
+    <li>
+      <a alt="Instagram" href="https://www.instagram.com/ahoratigo/" target="_blank"><img
+          src="/media/icon-instagram.svg"></a>
+    </li>
+    <li>
+      <a alt="Facebook" href="https://www.facebook.com/Ahoratigo-2155631211421039/" target="_blank"><img
+          src="/media/icon-facebook.svg"></a>
+    </li>
+    <li>
+      <a alt="Linkedin" href="https://www.linkedin.com/company/ahoratigo/" target="_blank"><img
+          src="/media/icon-linkedin.svg"></a>
+    </li>
+  </ul>
+</section>
+
+<script>
+  function scrollToId(elementId, scrollOptions) {
+    const element = document.getElementById(elementId);
+
+    const options = scrollOptions || {};
+    const scrollIntoViewOptions = { behavior: 'smooth' };
+    for (var attr in options) {
+      scrollIntoViewOptions[attr] = options[attr];
+    }
+
+    element.scrollIntoView(scrollIntoViewOptions);
+  }
+</script>
