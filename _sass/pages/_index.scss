@@ -1,15 +1,16 @@
 .hero-header {
-  background: url(/media/photos/suca.png) 0% 0% / cover;
-  min-height: 600px;
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
   opacity: 0.8;
-  // margin-top: 40px;
-  background-position-x: center;
   background-color: $grey-light-color;
+  @include respond(tablet) {
+    flex-direction: column;
+    padding: 0px 20px;
+  }
 
   &__container {
-    margin: auto;
     display: flex;
     justify-items: center;
     flex-flow: column wrap;
@@ -18,11 +19,9 @@
   }
 
   &__title {
-    color: $white-color;
     font-size: 55px;
     font-family: $font-family-title;
     font-weight: 300;
-    text-shadow: 1px 1px 1px #666;
     text-align: center;
     margin-top: 40px;
     margin-left: auto;
@@ -33,11 +32,13 @@
 
     @include respond(mobile) {
       font-size: 40px;
+      margin-top: 0px;
+      display: block;
     }
   }
 
   &__subtitle {
-    color: $white-color;
+    // color: $white-color;
     font-family: $font-family-title;
     font-weight: 300;
     margin: auto;
@@ -46,14 +47,6 @@
     line-height: 1.4em;
     padding-left: 10px;
     padding-right: 10px;
-
-    &--motto {
-      font-style: italic;
-      margin-top: 25px;
-      animation-name: moveInLeft;
-      animation-duration: 3s;
-      animation-timing-function: ease-in;
-    }
 
     @include respond(mobile) {
       font-size: 1em;
@@ -81,7 +74,18 @@
     }
   }
 
-  // A hear beating
+  &__image {
+    background: url(/media/photos/suca.png) 0% 0% / cover;
+    background-position-x: center;
+    min-height: 600px;
+    max-width: 900px;
+    width: 100%;
+    @include respond(mobile) {
+      min-height: 400px;
+    }
+  }
+
+  // A heart beating
   @keyframes heartFadeInOut {
     0% {
       transform: scale(1);
@@ -123,6 +127,66 @@
     100% {
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+}
+
+.colaborator-list {
+  ext-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: space-around;
+  width: 100%;
+  margin: 40px 0px;
+
+  &__item {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+  }
+
+  &__logo {
+    width: 300px;
+    opacity: 0.8;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    @include respond(mobile) {
+      padding: 0px 20px;
+      width: 200px;
+    }
+  }
+}
+
+/* Social Media */
+.socialMedia {
+  list-style-type: none;
+  padding-left: 0px;
+  text-align: center;
+  // margin-top: 50px;
+  // padding-bottom: 50px;
+
+  svg {
+    fill: white;
+  }
+
+  li {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+
+    img {
+      width: 36px;
+      opacity: 0.6;
+
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 }
