@@ -131,12 +131,30 @@
   }
 }
 
+.service-blocks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+
+  &__item {
+    background-color: red;
+    display: block;
+    border: 1px red solid;
+    // height: auto;
+    flex: 1 0 auto;
+    margin: 0;
+    text-align: center;
+    height: 200px;
+  }
+}
+
 .colaborator-list {
-  ext-align: center;
   display: flex;
   flex-direction: row;
   align-items: center;
   align-content: space-around;
+  flex-flow: wrap;
   width: 100%;
   margin: 40px 0px;
 
