@@ -1,0 +1,38 @@
+.main-paragraph {
+  font-family: $font-family-base;
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 1.46;
+  margin: 0;
+  text-align: center;
+  max-width: 936px; // 752px;
+  padding-bottom: 20px;
+  line-height: 1.4;
+  margin-bottom: 8px;
+
+  & p {
+    margin-top: 0;
+  }
+
+  &--2-cols {
+    column-count: 2;
+    column-gap: 30px;
+    text-align: justify;
+
+    @include respond(mobile) {
+      column-count: 1;
+    }
+  }
+
+  &--last-paragraph {
+    padding-bottom: 60px;
+  }
+
+  &--small {
+    font-size: 16px;
+    max-width: 600px;
+    padding-bottom: 0px;
+
+    text-align: center;
+  }
+}

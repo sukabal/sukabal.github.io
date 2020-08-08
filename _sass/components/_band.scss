@@ -1,0 +1,37 @@
+.band {
+  min-height: 200px;
+  font-family: $font-family-title;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    font-weight: 300;
+    text-align: center;
+    font-size: 36px;
+    padding-top: 40px;
+
+    &.left {
+      text-align: left;
+    }
+
+    &.right {
+      text-align: right;
+    }
+  }
+
+  h3 {
+    font-weight: 300;
+  }
+
+  &--mini {
+    min-height: 0px;
+
+    h2 {
+      font-weight: 300;
+      font-size: 28px;
+      padding-top: 20px;
+    }
+  }
+}
