@@ -5,7 +5,9 @@
   text-align: center;
   align-items: flex-end;
   align-content: space-around;
-  width: 100%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
   padding: 30px;
 
   @include respond(tablet) {
@@ -15,11 +17,16 @@
   .contact-form {
     width: 100%;
     max-width: 600px;
+    font-family: $font-family-base !important;
 
     &__button {
-      background: #ffb16c;
-      width: 200px;
+      background: $accent-light-color;
+      width: 100% !important;
+      max-width: 200px !important;
       height: 40px;
+      color: white;
+      font-size: 18px;
+      margin-left: 0 !important;
     }
 
     form {
@@ -31,5 +38,30 @@
 
   .contact-social-media {
     width: 100%;
+    .socialMedia {
+      list-style-type: none;
+      padding-left: 0px;
+      text-align: center;
+
+      svg {
+        fill: white;
+      }
+
+      li {
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5px;
+
+        img {
+          width: 32px;
+          opacity: 0.6;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
   }
 }

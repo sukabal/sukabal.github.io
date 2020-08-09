@@ -182,33 +182,3 @@
     }
   }
 }
-
-#section-contact {
-  .socialMedia {
-    list-style-type: none;
-    padding-left: 0px;
-    text-align: center;
-    // margin-top: 50px;
-    // padding-bottom: 50px;
-
-    svg {
-      fill: white;
-    }
-
-    li {
-      display: inline-block;
-      margin-left: auto;
-      margin-right: auto;
-      padding: 15px;
-
-      img {
-        width: 36px;
-        opacity: 0.6;
-
-        &:hover {
-          opacity: 1;
-        }
-      }
-    }
-  }
-}
