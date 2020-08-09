@@ -1,15 +1,35 @@
 .contact-channels {
-  width: 100%;
+  font-family: $font-family-base;
   display: flex;
   flex-direction: row;
-}
-
-.contact-form {
+  text-align: center;
+  align-items: flex-end;
+  align-content: space-around;
   width: 100%;
+  padding: 30px;
 
-  &__button {
-    background: #ffb16c;
-    width: 200px;
-    height: 40px;
+  @include respond(tablet) {
+    flex-direction: column;
+  }
+
+  .contact-form {
+    width: 100%;
+    max-width: 600px;
+
+    &__button {
+      background: #ffb16c;
+      width: 200px;
+      height: 40px;
+    }
+
+    form {
+      margin-bottom: 30px;
+      padding: 20px !important;
+      box-sizing: border-box;
+    }
+  }
+
+  .contact-social-media {
+    width: 100%;
   }
 }
