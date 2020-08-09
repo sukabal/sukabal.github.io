@@ -132,22 +132,8 @@
   }
 }
 
-.service-blocks {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 100%;
-
-  &__item {
-    background-color: red;
-    display: block;
-    border: 1px red solid;
-    // height: auto;
-    flex: 1 0 auto;
-    margin: 0;
-    text-align: center;
-    height: 200px;
-  }
+#section-principles {
+  padding-top: 100px;
 }
 
 #section-colab {
@@ -170,9 +156,11 @@
     &__logo {
       width: 200px;
       opacity: 0.8;
+      transition: all 0.4s;
 
       &:hover {
         opacity: 1;
+        transform: scale(1.1);
       }
 
       @include respond(mobile) {

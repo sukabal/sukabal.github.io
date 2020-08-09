@@ -46,7 +46,8 @@
       text-decoration: none;
       &:hover {
         text-decoration: none;
-        color: $accent-light-color;
+        color: $accent-color;
+        font-weight: bold;
       }
     }
   }
