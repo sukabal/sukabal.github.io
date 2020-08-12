@@ -15,7 +15,7 @@
     flex-direction: column;
   }
 
-  #section-gender-equality {
+  #section-ods {
     width: 50%;
     @include respond(tablet) {
       width: 100%;
@@ -86,10 +86,11 @@ div.anchor {
     }
 
     &--2 {
-      background: url(/media/photos/photo-gender-equality.jpg) 0% 0% / cover;
+      background: url(/media/photos/photo-ods.jpg) 0% 0% / cover;
       background-position-x: center;
       background-position-y: center;
       margin: 0px 5px 0px 10px;
+      filter: contrast(0.5);
       @include respond(tablet) {
         margin-right: 10px;
       }
