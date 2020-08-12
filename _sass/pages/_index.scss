@@ -5,7 +5,7 @@
   align-items: center;
   opacity: 0.8;
   background-color: $grey-light-color;
-  padding: 0px 40px;
+  padding: 0px 0px 0px 40px;
 
   @include respond(tablet) {
     flex-direction: column;

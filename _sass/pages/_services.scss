@@ -1,18 +1,47 @@
-.section-enterprise {
+#section-enterprise {
+  width: 100%;
 }
 
-.section-gender-equality {
+.section-central-double {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0;
+  margin: 50px 0px;
+
+  @include respond(tablet) {
+    flex-direction: column;
+  }
+
+  #section-gender-equality {
+    width: 50%;
+    @include respond(tablet) {
+      width: 100%;
+    }
+  }
+
+  #section-training {
+    width: 50%;
+    @include respond(tablet) {
+      width: 100%;
+    }
+  }
 }
 
-.section-training {
+#section-personal {
+  width: 100%;
 }
 
-.section-personal {
+div.anchor {
+  position: absolute;
+  top: -200px; // header-size + some space
 }
 
+/* Common for all services */
 .my-service {
-  display: relative;
-  max-width: $max-text-width;
+  position: relative;
   padding-bottom: 20px;
 
   &__title {
@@ -48,6 +77,7 @@
     align-items: center;
     opacity: 0.8;
     box-shadow: inset 0 0 0 100vmax rgba(13, 102, 132, 0.3);
+    box-sizing: border-box;
 
     &--1 {
       background: url(/media/photos/photo-enterprise-service.jpg) 0% 0% / cover;
@@ -56,19 +86,27 @@
     }
 
     &--2 {
-      background: url(/media/photos/background-main.jpg) 0% 0% / cover;
+      background: url(/media/photos/photo-gender-equality.jpg) 0% 0% / cover;
       background-position-x: center;
       background-position-y: center;
+      margin: 0px 5px 0px 10px;
+      @include respond(tablet) {
+        margin-right: 10px;
+      }
     }
 
     &--3 {
-      background: url(/media/photos/background-main.jpg) 0% 0% / cover;
+      background: url(/media/photos/photo-training.jpg) 0% 0% / cover;
       background-position-x: center;
       background-position-y: center;
+      margin: 0px 10px 0px 5px;
+      @include respond(tablet) {
+        margin-left: 10px;
+      }
     }
 
     &--4 {
-      background: url(/media/photos/background-main.jpg) 0% 0% / cover;
+      background: url(/media/photos/photo-personal-service.jpg) 0% 0% / cover;
       background-position-x: center;
       background-position-y: center;
     }
@@ -79,9 +117,15 @@
     padding: 40px;
     max-width: $max-text-width;
     text-align: justify;
-    width: 80%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
+    @include respond(tablet) {
+      width: 70%;
+    }
+    @include respond(mobile) {
+      width: 80%;
+    }
   }
 
   &__use-cases-box {
@@ -155,175 +199,5 @@
         background-color: $accent-light-color;
       }
     }
-  }
-}
-
-// DELETE ME
-
-/* Services Page */
-.services-mini-cards {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: stretch;
-  justify-content: center;
-  max-width: 768px;
-
-  @media all and (max-width: 719px) {
-    justify-content: flex-start;
-  }
-
-  @media all and (max-width: 400px) {
-    width: 100%;
-  }
-}
-
-.service-mini {
-  align-items: stretch;
-  width: 33%;
-
-  @media all and (max-width: 719px) {
-    width: 50%;
-  }
-
-  @media all and (max-width: 500px) {
-    width: 100%;
-  }
-
-  .service-mini-content {
-    padding: 20px;
-    margin: 8px;
-    background-color: $grey-light-color;
-    height: 280px;
-
-    @media all and (max-width: 719px) {
-      height: 320px;
-    }
-
-    @media all and (max-width: 500px) {
-      height: 200px;
-    }
-  }
-
-  .service-mini-title {
-    color: $accent-color;
-    margin-top: 10px;
-
-    @mixin service-icon() {
-      display: block;
-      content: " ";
-      background-size: 28px 28px;
-      height: 28px;
-      width: 28px;
-      margin-bottom: 12px;
-      margin-top: 5px;
-    }
-
-    &.chat:before {
-      @include service-icon();
-      background-image: url("/media/icon-chat.svg");
-    }
-
-    &.email:before {
-      @include service-icon();
-      background-image: url("/media/icon-email.svg");
-    }
-
-    &.call:before {
-      @include service-icon();
-      background-image: url("/media/icon-call.svg");
-    }
-  }
-
-  .service-mini-text {
-    max-width: 90%;
-    font-size: 14px;
-  }
-}
-
-@mixin service-extra() {
-  padding: 30px;
-
-  h2 {
-    margin-top: -15px;
-  }
-}
-
-.service-band-with-box {
-  display: flex;
-  flex-flow: row nowrap;
-  padding-top: 50px;
-
-  @media all and (max-width: 719px) {
-    flex-wrap: wrap;
-  }
-
-  @media all and (max-width: 400px) {
-    flex-wrap: wrap;
-  }
-}
-
-.service-custom {
-  background-color: $accent-light-color;
-  @include service-extra();
-  margin-right: 100px;
-  margin-left: -60px;
-
-  @media all and (max-width: 719px) {
-    margin-right: 0px;
-    margin-left: 0px;
-  }
-}
-
-.service-custom-photo {
-  background-image: url("/media/photos/photo-custom-service.jpg");
-  margin-right: -50px;
-  margin-left: -50px;
-
-  @media all and (max-width: 719px) {
-    margin-right: 0px;
-    margin-left: 0px;
-    width: 100%;
-  }
-}
-
-.service-enterprise {
-  background-color: $primary-color;
-  @include service-extra();
-  margin-left: 100px;
-  margin-right: -60px;
-
-  @media all and (max-width: 719px) {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-}
-
-.service-enterprise-photo {
-  background-image: url("/media/photos/photo-enterprise-service.jpg");
-  margin-left: -50px;
-  margin-right: -50px;
-
-  @media all and (max-width: 719px) {
-    margin-right: 0px;
-    margin-left: 0px;
-    width: 100%;
-  }
-}
-
-.service-button-subscribe {
-  padding: 10px 24px;
-  background-color: $grey-light-color;
-  font-size: 14px;
-  margin-top: 36px;
-  font-weight: 300;
-  font-family: $font-family-title;
-  border-radius: 4px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-
-  &:hover {
-    background-color: $black-color;
-    cursor: pointer;
-    color: $white-color;
   }
 }

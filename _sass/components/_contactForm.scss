@@ -1,18 +1,14 @@
 .contact-channels {
   font-family: $font-family-base;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   text-align: center;
-  align-items: flex-end;
+  align-items: center;
   align-content: space-around;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
   padding: 30px;
-
-  @include respond(tablet) {
-    flex-direction: column;
-  }
 
   .contact-form {
     width: 100%;
