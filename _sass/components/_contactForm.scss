@@ -38,11 +38,12 @@
 
   .contact-social-media {
     width: 100%;
-    .socialMedia {
+
+    .social-media {
       list-style-type: none;
       padding-left: 0px;
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: -10px;
 
       svg {
         fill: white;
@@ -62,6 +63,19 @@
             opacity: 1;
           }
         }
+      }
+    }
+  }
+
+  .contact-email {
+    width: 100%;
+    color: $white-color;
+
+    a {
+      color: $accent-light-color;
+
+      &:hover {
+        color: $accent-color;
       }
     }
   }

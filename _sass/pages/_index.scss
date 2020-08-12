@@ -5,6 +5,7 @@
   align-items: center;
   opacity: 0.8;
   background-color: $grey-light-color;
+  padding: 0px 40px;
 
   @include respond(tablet) {
     flex-direction: column;
@@ -79,7 +80,7 @@
     background: url(/media/photos/suca.png) 0% 0% / cover;
     background-position-x: center;
     min-height: 600px;
-    max-width: 900px;
+    max-width: $max-text-width;
     width: 100%;
     @include respond(mobile) {
       min-height: 400px;
@@ -134,6 +135,11 @@
 
 #section-principles {
   @include section-jump;
+  padding: 0px 80px 40px 80px;
+
+  @include respond(mobile) {
+    padding: 0px 30px;
+  }
 }
 
 #section-services {
@@ -146,50 +152,4 @@
 
 #section-colab {
   @include section-jump;
-
-  .colaborator-list {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: space-around;
-    flex-flow: wrap;
-    width: 100%;
-    margin: 40px 0px;
-    text-align: center;
-    justify-content: space-around;
-    max-width: 900px;
-
-    &__item {
-      width: 15%;
-      display: inline-block;
-      padding: 20px;
-
-      @include respond(tablet) {
-        width: 25%;
-      }
-      @include respond(mobile) {
-        width: 80%;
-      }
-    }
-
-    &__logo {
-      width: 100%;
-      opacity: 0.8;
-      -webkit-filter: grayscale(1);
-      filter: grayscale(1);
-      transition: all 0.4s;
-
-      &:hover {
-        opacity: 1;
-        -webkit-filter: grayscale(0);
-        filter: grayscale(0);
-        transform: scale(1.1);
-      }
-
-      @include respond(mobile) {
-        padding: 0px 20px;
-        width: 200px;
-      }
-    }
-  }
 }
