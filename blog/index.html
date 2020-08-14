@@ -3,10 +3,6 @@ layout: default
 title: Blog
 ---
 
-<section class="band bg-grey">
-  <h1 class="page-title">Blog</h1>
-</section>
-
 <ul class="posts">
   {% for post in site.posts %}
   <a href="{{ post.url }}" class="entry-anchor-to-content">
@@ -15,11 +11,13 @@ title: Blog
         <h2 class="entry-title">{{ post.title }}</h2>
         <span class="entry-metadata">{{post.author }}, {{ post.date | date_to_string }}</span>
 
-        <img src="{{ post.main-image}}" class="entry-main-image entry-image-link">
+        <img src="{{ post.main-image}}" class="entry-main-image entry-image-link" />
 
         <article class="entry-content">
-          {{ post.content | strip_html | truncatehtml | truncatewords: 35 }}<span class="entry-readMore">(leer
-            más...)</span>
+          {{ post.content | strip_html | truncatehtml | truncatewords: 35 }}<span
+            class="entry-readMore"
+            >(leer más...)</span
+          >
         </article>
       </section>
     </li>

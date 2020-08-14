@@ -11,6 +11,8 @@
     display: block;
     text-decoration: none;
     width: 25%;
+    position: relative;
+
     @include respond(tablet) {
       width: 50%;
     }
@@ -29,9 +31,10 @@
     font-size: 3em;
     text-align: center;
     text-align: left;
+    transition: all 0.3s;
 
     &:hover {
-      //   transform: scale(1.1);
+      opacity: 0.9;
       cursor: pointer;
     }
 
@@ -89,6 +92,15 @@
         @include respond(tablet) {
           max-width: 90px;
         }
+      }
+
+      .service-read-more {
+        font-size: 18px;
+        text-align: right;
+        position: absolute;
+        font-weight: 300;
+        bottom: 0;
+        right: 30px;
       }
     }
   }
