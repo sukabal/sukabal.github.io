@@ -143,6 +143,10 @@ div.anchor {
     margin-right: auto;
     max-width: 600px;
     box-shadow: 0 1.5rem 4rem rgba(34, 34, 34, 0.15);
+    @include respond(mobile) {
+      width: 100%;
+      box-shadow: none;
+    }
   }
 
   &__use-cases {
@@ -152,6 +156,10 @@ div.anchor {
     padding-left: 0 !important;
     border-radius: 10px;
     background-color: white;
+
+    @include respond(mobile) {
+      border-radius: 0px;
+    }
 
     &-title {
       font-family: $font-family-title;
