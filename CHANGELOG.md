@@ -1,9 +1,15 @@
 # Changelog
+
 All notable changes to this project will be documented in this file.
+
+## [1.1.0] - 2020-08-17
+
+- Complete redesign
 
 ## [1.0.0] - 2018-02-26
 
 ### Added
+
 - Add paypal integration for:
   - servicio-chat
   - servicio-correo
@@ -16,6 +22,7 @@ All notable changes to this project will be documented in this file.
 ## [0.1.0] - 2018-12-30
 
 ### Added
+
 - Basic contents with 4 sections:
   - Portada
   - Servicios
