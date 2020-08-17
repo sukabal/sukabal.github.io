@@ -15,12 +15,14 @@
 # in the templates via {{ site.myvariable }}.
 title: ahoratigo.com
 name: ahoratigo
+author: Suca Baldor
 email: suca@ahoratigo.com
+logo: https://ahoratigo.com/logo.png
 description: >-
-  AHORATIGO es tu nueva plataforma de apoyo psicológico en red. Siempre que necesites ayuda, ahí estaremos para ti.
-  Problemas de pareja, algo que quieras cambiar o mejorar en tu vida, guía, consejo, ayuda...
+  Tu nueva plataforma de apoyo psicológico en línea.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://ahoratigo.com" # the base hostname & protocol for your site, e.g. http://example.com
+tagline: AHORATIGO
+url: https://ahoratigo.com # the base hostname & protocol for your site, e.g. http://example.com
 twitter:
   username: ahoratigo
   card: summary
@@ -34,7 +36,6 @@ permalink: /blog/:year/:month/:day/:title
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
