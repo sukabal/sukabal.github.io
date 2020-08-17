@@ -56,7 +56,7 @@
     }
 
     .service-content {
-      padding: 30px;
+      padding: 30px 10px;
 
       .service-title {
         font-weight: 300;
@@ -89,7 +89,7 @@
         max-width: 150px;
         margin-left: 20px;
         opacity: 0.5;
-        @include respond(tablet) {
+        @include respond(large) {
           max-width: 90px;
         }
       }
