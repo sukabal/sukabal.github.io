@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Programa SUMA Talento: segunda edición"
+title: "2ª edición Proyecto SUMA Talento"
 permalink: "/blog/proyecto-suma-talento-2"
 author: Suca Baldor
 main-image: /blog/images/proyecto-suma-talento-2.jpg
