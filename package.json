@@ -3,14 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {
-    "@commitlint/cli": "^8.3.3",
-    "@commitlint/config-conventional": "^7.1.2",
-    "husky": "^1.1.2"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "bundle exec jekyll serve"
   },
   "repository": {
@@ -22,10 +15,5 @@
   "bugs": {
     "url": "https://github.com/sukabal/sukabal.github.io/issues"
   },
-  "homepage": "https://github.com/sukabal/sukabal.github.io#readme",
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  }
+  "homepage": "https://github.com/sukabal/sukabal.github.io#readme"
 }
