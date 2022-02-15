@@ -16,4 +16,4 @@ La charla giró alrededor de los enunciados del investigador, biólogo y neuroci
 
 El vídeo puede verse en [este enlace](https://www.cuatro.com/los-teloneros/a-la-carta/programa-completo_18_3224822898.html), a partir del minuto `10:55`
 
-Los Teloneroses es un programa de información en clave de humor, emitido por la cadena nacional española [Cuatro](https://www.cuatro.com/)
+Los Teloneros es es un programa de información en clave de humor, emitido por la cadena nacional española [Cuatro](https://www.cuatro.com/)
